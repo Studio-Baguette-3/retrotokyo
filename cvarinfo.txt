@@ -1,0 +1,2 @@
+user bool rt_motionvision = false;
+user bool rt_ghost = false;

@@ -1,0 +1,775 @@
+
+
+class RTArachnotron : Arachnotron Replaces Arachnotron
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTArchvile : Archvile Replaces Archvile
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTBaronOfHell : BaronOfHell Replaces BaronOfHell
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTHellKnight : HellKnight Replaces HellKnight
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTCacodemon : Cacodemon Replaces Cacodemon
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTCyberdemon : Cyberdemon Replaces Cyberdemon
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTDemon : Demon Replaces Demon
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTSpectre : Spectre Replaces Spectre
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTChaingunGuy : ChaingunGuy Replaces ChaingunGuy
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTDoomImp : DoomImp Replaces DoomImp
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTFatso : Fatso Replaces Fatso
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTLostSoul : LostSoul Replaces LostSoul
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTPainElemental : PainElemental Replaces PainElemental
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTRevenant : Revenant Replaces Revenant
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTShotgunGuy : ShotgunGuy Replaces ShotgunGuy
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTSpiderMastermind : SpiderMastermind Replaces SpiderMastermind
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTWolfensteinSS : WolfensteinSS Replaces WolfensteinSS
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    
+
+class RTZombieMan : ZombieMan Replaces ZombieMan
+{
+    Vector3 prevpos;
+    float prevspd;
+    int i;
+    int prevstyle;
+
+    override void PostBeginPlay()
+    {
+        prevspd = 0.0;
+        i = 0;
+        prevstyle = GetRenderStyle();
+        //self.bBright = true;
+    }
+
+    override void Tick()
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        if (!b) {
+            self.A_SetRenderStyle(1.0, prevstyle);
+            return Super.Tick();
+        } else {
+            self.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+            float spd = abs(((self.Pos.x - prevpos.x) * (self.Pos.x - prevpos.x)) + ((self.Pos.y - prevpos.y) * (self.Pos.y - prevpos.y)) + ((self.Pos.z - prevpos.z) * (self.Pos.z - prevpos.z)));
+            spd = min(spd, 2000.0);
+            spd = (prevspd * 0.8) + (spd * 3.0);
+            int x = max(72, min(int(spd), 255));
+            if (i > 3)
+            {
+                self.SetShade(Color(x, x, x)); // TODO: reset this??
+                i = 0;
+            }
+            i = i + 1;
+            prevpos = self.Pos;
+            prevspd = spd;
+            return Super.Tick();
+        }
+    }
+}
+    

@@ -1,0 +1,7 @@
+HardwareShader PostProcess scene
+{
+	Name "Motionvision"
+	Shader "shaders/glsl/Motionvision.fp" 330
+	Texture NoiseTexture "textures/noise.png"
+	Uniform float timer
+}

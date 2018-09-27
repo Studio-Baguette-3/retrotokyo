@@ -1,0 +1,82 @@
+Class RTEnemyActor
+{
+    Vector2 vec;
+}
+
+Class RTHud : HUDMessageBase
+{
+    TextureID beacon;
+    Array<RTEnemyActor> enemies;
+    ThinkerIterator t;
+    Actor Camera;
+    Vector3 ViewPos;
+    double ViewAngle, ViewPitch, ViewRoll, LagRoll, LagRoll2;
+    Vector2 beaconsize;
+
+    RTHud Init()
+    {
+        beacon = TexMan.CheckForTexture("BEACO", TexMan.Type_Any);
+        beaconsize = TexMan.GetScaledSize(beacon);
+        t = ThinkerIterator.Create("Actor");
+        return self;
+    }
+
+    override bool Tick()
+    {
+        t.Reinit();
+        enemies.Clear();
+        Actor a;
+        Vector3 vdir = (cos(ViewAngle) * cos(ViewPitch), sin(ViewAngle) * cos(ViewPitch), -sin(ViewPitch));
+        while (a = Actor(t.Next()))
+        {
+            Vector3 tdir = Level.Vec3Diff(ViewPos, a.Pos + (0, 0, a.Height * 0.5));
+            // distance from player: tdir.length()
+            if (!a.bSHOOTABLE || (a.Health <= 0) || (acos(tdir.unit() dot vdir) > players[consoleplayer].FOV))
+                continue;
+            Vector3 wpos = ViewPos + tdir;
+            Vector3 spos = mkCoordUtil.WorldToScreen(wpos, ViewPos, ViewPitch, ViewAngle, ViewRoll, players[consoleplayer].FOV);
+            if (spos.z > 1.0)
+                continue;
+            RTEnemyActor rea = new ("RTEnemyActor");
+            rea.vec = mkCoordUtil.ToViewport(spos);
+            enemies.Push(rea);
+        }
+        return false;
+    }
+
+    override void Draw(int bottom, int visibility)
+    {
+        PlayerInfo p = players[consoleplayer];
+        bool b = Cvar.GetCVar("rt_ghost", p).GetBool();
+        if (b)
+        {
+            for (int i = 0; i < enemies.Size(); i++)
+            {
+                Screen.DrawTexture(beacon, false, enemies[i].vec.x - beaconsize.x * 0.5, enemies[i].vec.y - beaconsize.y * 0.5, DTA_RenderStyle, (1 | 2 << 8 | 1 << 16));
+            }
+        }
+    }
+}
+
+Class RTHudHandler : EventHandler
+{
+    ui RTHud rthud;
+
+    override void RenderOverlay(RenderEvent e)
+    {
+        PlayerInfo p = players[consoleplayer];
+        if (!rthud)
+        {
+            rthud = new ("RTHud").Init();
+            StatusBar.AttachMessage(rthud, 0, StatusBar.HUDMSGLayer_UnderHUD);
+        }
+        rthud.Camera = e.Camera;
+        rthud.ViewPos = e.ViewPos;
+        rthud.ViewAngle = e.ViewAngle;
+        rthud.ViewPitch = e.ViewPitch;
+        rthud.ViewRoll = e.ViewRoll;
+        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        Shader.SetUniform1f(players[consoleplayer], "Motionvision", "timer", gametic);
+        Shader.SetEnabled(players[consoleplayer], "Motionvision", b);
+    }
+}
