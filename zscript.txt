@@ -5,6 +5,7 @@ version "3.5"
 #include "zscript/lib/mk_quaternion.zsc"
 
 #include "zscript/milso.zsc"
+#include "zscript/smokegrenade.zsc"
 
 #include "zscript/motionvision.zsc"
 #include "zscript/monster_overrides.zsc"

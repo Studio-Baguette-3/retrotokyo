@@ -1,0 +1,79 @@
+Class SmokeGrenade : Ammo
+{
+  Default {
+    Inventory.PickupMessage "Smoke grenades";
+    Inventory.Amount 2;
+    Inventory.MaxAmount 4;
+    Inventory.Icon "CLIPA0";
+    Ammo.BackpackAmount 2;
+    Ammo.BackpackMaxAmount 4;
+  }
+
+  States
+  {
+    Spawn:
+      CLIP A -1;
+      stop;
+  }
+}
+
+Class RTSmoke : Actor {
+  Default {
+    Radius 60;
+    Height 60;
+    +NOGRAVITY;
+    +NOBLOCKMAP;
+    +NOCLIP;
+    +DONTSPLASH;
+    +NOTELEPORT;
+    Gravity 0.0;
+    Scale 2;
+  }
+  States
+  {
+    Spawn:
+      RTR0 A 1000 BRIGHT; // TODO: multiple frames!
+      stop;
+  }
+}
+
+Class SmokeGrenadeProjectile : Grenade
+{
+  States
+  {
+    Death:
+      TNT1 A 1 {
+        Spawn("RTSmoke", self.Pos, NO_REPLACE);
+      }
+      Stop;
+  }
+}
+
+Class SmokeGrenadeHand : Pistol
+{
+  Default {
+    Weapon.SlotNumber 2;
+    Weapon.AmmoType "SmokeGrenade";
+    Weapon.AmmoGive 20;
+    +Weapon.NoAlert;
+  }
+
+  States
+  {
+    Ready:
+      PUNG A 1 A_WeaponReady;
+      Loop;
+    Deselect:
+      PUNG A 1 A_Lower;
+      Loop;
+    Select:
+      PUNG A 1 A_Raise;
+      Loop;
+    Fire:
+      PUNG A 1;
+      PUNG B 1 A_FireCustomMissile("SmokeGrenadeProjectile");
+      PUNG A 1 A_CheckReload;
+      PUNG A 1 A_Refire;
+      Goto Ready;
+  }
+}

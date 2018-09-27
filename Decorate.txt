@@ -1,6 +1,8 @@
 Actor recon : Doomplayer
 {
   Player.startitem "Milso"
+  Player.startitem "SmokeGrenadeHand"
+  Player.startitem "SmokeGrenade" 5
   Player.startitem "MilsoAmmo" 5
   Player.startitem "MilsoAmmoLoaded" 12
 }
