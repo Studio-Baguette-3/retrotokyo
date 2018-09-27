@@ -1,0 +1,118 @@
+Class Milso : Weapon
+{
+  Default {
+    Weapon.SelectionOrder 1900;
+    Weapon.AmmoUse 1;
+    Weapon.AmmoGive 20;
+    Weapon.AmmoType1 "MilsoAmmoLoaded";
+    Weapon.AmmoUse1 1;
+    Weapon.AmmoGive1 0;
+    Weapon.AmmoType2 "MilsoAmmo";
+    Weapon.AmmoUse2 0;
+    Weapon.AmmoGive2 20;
+    +Weapon.NoAlert;
+    +Weapon.Ammo_Optional;
+    Inventory.Pickupmessage "Picked up a Milso.";
+    AttackSound "weapons/MilsoFire";
+    decal "BulletChip";
+  }
+
+  States
+  {
+    Ready:
+      MILS A 1 A_WeaponReady(WRF_ALLOWRELOAD);
+      Loop;
+    Deselect:
+      MILS A 1 A_Lower;
+      Loop;
+    Select:
+      MILS A 1 A_Raise;
+      Loop;
+    NoAmmo:
+      MILS A 20 A_PlayWeaponSound("weapons/MilsoEmpt");
+      Goto Ready;
+    Fire:
+      MILS A 0 A_JumpIfNoAmmo("NoAmmo");
+      MILS A 4 Offset(0, 30);
+      MILS A 6 A_FireBullets(2,1.5,1,6,"BulletPuff",1);
+      MILS A 4 Offset(0, 32);
+      MILS A 5 A_ReFire;
+      Goto Ready;
+    Flash:
+      MILS A 3 Bright A_Light2;
+      MILS A 3 Bright A_Light1;
+      MILS A 0 Bright A_Light0;
+      Goto LightDone;
+    Spawn:
+      MILS A -1;
+      Stop;
+    Reload:
+      MILS A 0 A_JumpIfInventory("MilsoAmmoLoaded", 12, 2);
+      MILS A 0 A_JumpIfInventory("MilsoAmmo", 1, "ReloadWork");
+      MILS A 1;
+      Goto Ready;
+    ReloadWork:
+      MILS A 1 Offset(0,35) A_PlayWeaponSound("weapons/MilsoRelo");
+      MILS A 1 Offset(0,38);
+      MILS A 1 Offset(0,44);
+      MILS A 1 Offset(0,52);
+      MILS A 1 Offset(0,62);
+      MILS A 1 Offset(0,72);
+      MILS A 1 Offset(0,82);
+      TNT1 A 0 A_GiveInventory("MilsoAmmoLoaded", 12);
+      TNT1 A 40 A_TakeInventory("MilsoAmmo", 1);
+      MILS A 1 Offset(0,82);
+      MILS A 1 Offset(0,72);
+      MILS A 1 Offset(0,62);
+      MILS A 1 Offset(0,52);
+      MILS A 1 Offset(0,44);
+      MILS A 1 Offset(0,38);
+      MILS A 1 Offset(0,35);
+      MILS A 1 Offset(0,32);
+      Goto Ready;
+  }
+}
+
+Class MilsoAmmo : Ammo replaces Clip
+{
+  Default {
+    Inventory.Amount 10;
+    Inventory.MaxAmount 150;
+    Ammo.BackpackAmount 10;
+    Ammo.BackpackMaxAmount 150;
+    Inventory.Icon "CLIPA0";
+    Inventory.PickupMessage "Picked up Milso ammo.";
+  }
+
+  States
+  {
+    Spawn:
+      CLIP A -1;
+      Stop;
+  }
+}
+
+Class MilsoAmmoSmall : MilsoAmmo
+{
+  Default {
+    Inventory.Amount 6;
+    Inventory.PickupMessage "Picked up some Milso ammo.";
+    Inventory.PickupSound "Beretta/Drop";
+    +DROPPED;
+  }
+
+  States
+  {
+    Spawn:
+      9MMP A -1;
+      Stop;
+  }
+}
+
+Class MilsoAmmoLoaded : Ammo
+{
+  Default {
+    Inventory.MaxAmount 12;
+    +Inventory.IGNORESKILL;
+  }
+}
