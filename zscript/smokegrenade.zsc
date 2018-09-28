@@ -35,6 +35,17 @@ Class RTSmoke : Actor {
       RTR0 A 1000 BRIGHT; // TODO: multiple frames!
       stop;
   }
+
+  override void Tick() {
+    PlayerInfo p = players[consoleplayer];
+    bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+    if (!b) {
+      self.A_SetRenderStyle(1.0, STYLE_TRANSLUCENT);
+    } else {
+      self.A_SetRenderStyle(0.03, STYLE_TRANSLUCENT);
+    }
+    return Super.Tick();
+  }
 }
 
 Class SmokeGrenadeProjectile : Grenade
