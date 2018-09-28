@@ -1,0 +1,76 @@
+class RT_MonsterMotionVision_Init : EventHandler {
+	override void WorldThingSpawned(WorldEvent e) {
+		if(!e.Thing) { return; }
+		if(e.Thing.CheckClass('Arachnotron', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('Archvile', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('BaronOfHell', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('HellKnight', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('Cacodemon', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('Cyberdemon', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('Demon', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('Spectre', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('ChaingunGuy', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('DoomImp', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('Fatso', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('LostSoul', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('PainElemental', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('Revenant', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('ShotgunGuy', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('SpiderMastermind', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('WolfensteinSS', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('ZombieMan', AAPTR_DEFAULT, true)) {
+			e.Thing.GiveInventory('RT_MonsterMotionVision_Updater', 1);
+		}
+	}
+}
+
+
+class RT_MonsterMotionVision_Updater : Inventory
+{
+	Vector3 prevpos;
+	float prevspd;
+	int i;
+	int prevstyle;
+
+	default {
+		Inventory.MaxAmount 1;
+		+INVENTORY.PERSISTENTPOWER;
+	}
+
+	override void DoEffect() {
+		super.DoEffect();
+
+		PlayerInfo p = players[consoleplayer];
+		bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+		if (!b) {
+			owner.A_SetRenderStyle(1.0, prevstyle);
+			return Super.Tick();
+		} else {
+			owner.A_SetRenderStyle(1.0, STYLE_STENCIL);
+
+			float spd = abs(((owner.Pos.x - prevpos.x) * (owner.Pos.x - prevpos.x)) + ((owner.Pos.y - prevpos.y) * (owner.Pos.y - prevpos.y)) + ((owner.Pos.z - prevpos.z) * (owner.Pos.z - prevpos.z)));
+			spd = min(spd, 2000.0);
+			spd = (prevspd * 0.8) + (spd * 3.0);
+			int x = max(72, min(int(spd), 255));
+			if (i > 3)
+			{
+				owner.SetShade(Color(x, x, x)); // TODO: reset this??
+				i = 0;
+			}
+			i = i + 1;
+			prevpos = owner.Pos;
+			prevspd = spd;
+			return Super.Tick();
+		}
+	}
+
+	override void PostBeginPlay()
+	{
+		prevspd = 0.0;
+		i = 0;
+		prevstyle = GetRenderStyle();
+		//owner.bBright = true;
+	}
+
+}
+	
