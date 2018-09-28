@@ -1,4 +1,4 @@
 GameInfo
 {
-	AddEventHandlers = "RTHUDHandler", "RT_MonsterMotionVision_Init"
+	AddEventHandlers = "RTHUDHandler", "RT_MonsterVisionModes_Init"
 }

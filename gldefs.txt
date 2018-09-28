@@ -5,3 +5,11 @@ HardwareShader PostProcess scene
 	Texture NoiseTexture "textures/noise.png"
 	Uniform float timer
 }
+
+HardwareShader PostProcess scene
+{
+	Name "Thermalvision"
+	Shader "shaders/glsl/Thermalvision.fp" 330
+	Texture NoiseTexture "textures/noise.png"
+	Uniform float timer
+}

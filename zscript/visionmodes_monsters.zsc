@@ -1,4 +1,4 @@
-class RT_MonsterMotionVision_Init : EventHandler {
+class RT_MonsterVisionModes_Init : EventHandler {
 	override void WorldThingSpawned(WorldEvent e) {
 		if(!e.Thing) { return; }
 		if(e.Thing.CheckClass('Arachnotron', AAPTR_DEFAULT, true) || 
@@ -19,13 +19,13 @@ class RT_MonsterMotionVision_Init : EventHandler {
 			e.Thing.CheckClass('SpiderMastermind', AAPTR_DEFAULT, true) || 
 			e.Thing.CheckClass('WolfensteinSS', AAPTR_DEFAULT, true) || 
 			e.Thing.CheckClass('ZombieMan', AAPTR_DEFAULT, true)) {
-			e.Thing.GiveInventory('RT_MonsterMotionVision_Updater', 1);
+			e.Thing.GiveInventory('RT_MonsterVisionModes_Updater', 1);
 		}
 	}
 }
 
 
-class RT_MonsterMotionVision_Updater : Inventory
+class RT_MonsterVisionModes_Updater : Inventory
 {
 	Vector3 prevpos;
 	float prevspd;
@@ -41,11 +41,17 @@ class RT_MonsterMotionVision_Updater : Inventory
 		super.DoEffect();
 
 		PlayerInfo p = players[consoleplayer];
-		bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
-		if (!b) {
+		bool motionvision_enabled = Cvar.GetCVar("rt_motionvision", p).GetBool();
+		bool thermalvision_enabled = Cvar.GetCVar("rt_thermalvision", p).GetBool();
+
+		if (!motionvision_enabled && !thermalvision_enabled) {
+			owner.bBright = false; // TODO: properly reset / determine elsewhere?
 			owner.A_SetRenderStyle(1.0, prevstyle);
 			return Super.Tick();
-		} else {
+		}
+
+		if (motionvision_enabled) {
+			owner.bBright = false; // TODO: properly reset / determine elsewhere?
 			owner.A_SetRenderStyle(1.0, STYLE_STENCIL);
 
 			float spd = abs(((owner.Pos.x - prevpos.x) * (owner.Pos.x - prevpos.x)) + ((owner.Pos.y - prevpos.y) * (owner.Pos.y - prevpos.y)) + ((owner.Pos.z - prevpos.z) * (owner.Pos.z - prevpos.z)));
@@ -62,6 +68,14 @@ class RT_MonsterMotionVision_Updater : Inventory
 			prevspd = spd;
 			return Super.Tick();
 		}
+
+		if (thermalvision_enabled) {
+			// TODO: don't do any of this for invisible monsters!
+			owner.bBright = true;
+			owner.A_SetRenderStyle(1.0, STYLE_STENCIL);
+			owner.setShade(Color(255,255,50));
+			return Super.Tick();
+		}
 	}
 
 	override void PostBeginPlay()
@@ -69,7 +83,6 @@ class RT_MonsterMotionVision_Updater : Inventory
 		prevspd = 0.0;
 		i = 0;
 		prevstyle = GetRenderStyle();
-		//owner.bBright = true;
 	}
 
 }

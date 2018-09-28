@@ -7,5 +7,5 @@ version "3.5"
 #include "zscript/milso.zsc"
 #include "zscript/smokegrenade.zsc"
 
-#include "zscript/motionvision.zsc"
-#include "zscript/motionvision_monsters.zsc"
+#include "zscript/visionmodes.zsc"
+#include "zscript/visionmodes_monsters.zsc"

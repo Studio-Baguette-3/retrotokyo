@@ -75,8 +75,14 @@ Class RTHudHandler : EventHandler
         rthud.ViewAngle = e.ViewAngle;
         rthud.ViewPitch = e.ViewPitch;
         rthud.ViewRoll = e.ViewRoll;
-        bool b = Cvar.GetCVar("rt_motionvision", p).GetBool();
+
+        bool motionvision_enabled = Cvar.GetCVar("rt_motionvision", p).GetBool();
+        bool thermalvision_enabled = Cvar.GetCVar("rt_thermalvision", p).GetBool();
+
         Shader.SetUniform1f(players[consoleplayer], "Motionvision", "timer", gametic);
-        Shader.SetEnabled(players[consoleplayer], "Motionvision", b);
+        Shader.SetUniform1f(players[consoleplayer], "Thermalvision", "timer", gametic);
+
+        Shader.SetEnabled(players[consoleplayer], "Motionvision", motionvision_enabled);
+        Shader.SetEnabled(players[consoleplayer], "Thermalvision", thermalvision_enabled);
     }
 }
