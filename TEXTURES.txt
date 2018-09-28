@@ -6,3 +6,8 @@ Sprite RTR0A0, 256, 256
     YScale 1.5
     Patch RTR0A0, 0, 0 {}
 }
+
+Graphic XHAIRB1, 128, 128 {
+    Offset 64, 64
+    Patch XHAIRB1, 0, 0
+}

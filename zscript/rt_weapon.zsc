@@ -1,6 +1,7 @@
 Class RT_Weapon : Weapon {
 	override void PostBeginPlay()
 	{
+        A_SetCrossHair(1);
         Super.PostBeginPlay();
     }
 }
