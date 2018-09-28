@@ -1,2 +1,5 @@
 clearplayerclasses
-addplayerclass recon
+addplayerclass Recon
+addplayerclass Assault
+addplayerclass Support
+addplayerclass DoomPlayer

@@ -4,6 +4,12 @@ version "3.5"
 #include "zscript/lib/mk_coordutil.zsc"
 #include "zscript/lib/mk_quaternion.zsc"
 
+#include "zscript/rt_weapon.zsc"
+
+#include "zscript/recon.zsc"
+#include "zscript/assault.zsc"
+#include "zscript/support.zsc"
+
 #include "zscript/milso.zsc"
 #include "zscript/smokegrenade.zsc"
 

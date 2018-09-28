@@ -1,4 +1,4 @@
-Class Milso : Weapon
+Class Milso : RT_Weapon
 {
   Default {
     Weapon.SelectionOrder 1900;

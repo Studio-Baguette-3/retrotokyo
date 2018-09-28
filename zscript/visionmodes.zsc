@@ -76,8 +76,9 @@ Class RTHudHandler : EventHandler
         rthud.ViewPitch = e.ViewPitch;
         rthud.ViewRoll = e.ViewRoll;
 
-        bool motionvision_enabled = Cvar.GetCVar("rt_motionvision", p).GetBool();
-        bool thermalvision_enabled = Cvar.GetCVar("rt_thermalvision", p).GetBool();
+		bool vision_enabled = Cvar.GetCVar("rt_visionmode", p).GetBool();
+		bool motionvision_enabled = vision_enabled && p.cls == "Assault";
+		bool thermalvision_enabled = vision_enabled && p.cls == "Support";
 
         Shader.SetUniform1f(players[consoleplayer], "Motionvision", "timer", gametic);
         Shader.SetUniform1f(players[consoleplayer], "Thermalvision", "timer", gametic);

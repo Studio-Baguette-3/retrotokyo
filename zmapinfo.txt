@@ -1,4 +1,5 @@
 GameInfo
 {
 	AddEventHandlers = "RTHUDHandler", "RT_MonsterVisionModes_Init"
+	PlayerClasses = "Recon", "Assault", "Support", "DoomPlayer"
 }

@@ -38,11 +38,13 @@ Class RTSmoke : Actor {
 
   override void Tick() {
     PlayerInfo p = players[consoleplayer];
-    bool b = Cvar.GetCVar("rt_thermalvision", p).GetBool();
+    bool b = Cvar.GetCVar("rt_visionmode", p).GetBool();
     if (!b) {
       self.A_SetRenderStyle(1.0, STYLE_TRANSLUCENT);
     } else {
-      self.A_SetRenderStyle(0.03, STYLE_TRANSLUCENT);
+      if (p.cls == "Support") {
+        self.A_SetRenderStyle(0.03, STYLE_TRANSLUCENT);
+      }
     }
     return Super.Tick();
   }

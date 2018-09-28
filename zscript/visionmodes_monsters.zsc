@@ -41,10 +41,11 @@ class RT_MonsterVisionModes_Updater : Inventory
 		super.DoEffect();
 
 		PlayerInfo p = players[consoleplayer];
-		bool motionvision_enabled = Cvar.GetCVar("rt_motionvision", p).GetBool();
-		bool thermalvision_enabled = Cvar.GetCVar("rt_thermalvision", p).GetBool();
+		bool vision_enabled = Cvar.GetCVar("rt_visionmode", p).GetBool();
+		bool motionvision_enabled = vision_enabled && p.cls == "Assault";
+		bool thermalvision_enabled = vision_enabled && p.cls == "Support";
 
-		if (!motionvision_enabled && !thermalvision_enabled) {
+		if (!vision_enabled && !thermalvision_enabled) {
 			owner.bBright = false; // TODO: properly reset / determine elsewhere?
 			owner.A_SetRenderStyle(1.0, prevstyle);
 			return Super.Tick();

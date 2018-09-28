@@ -1,0 +1,6 @@
+Class RT_Weapon : Weapon {
+	override void PostBeginPlay()
+	{
+        Super.PostBeginPlay();
+    }
+}
