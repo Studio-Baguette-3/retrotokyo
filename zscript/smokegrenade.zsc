@@ -43,7 +43,15 @@ Class SmokeGrenadeProjectile : Grenade
   {
     Death:
       TNT1 A 1 {
-        Spawn("RTSmoke", self.Pos, NO_REPLACE);
+        for(int i = 0; i < 25; i++)
+        {
+          Vector3 pos = self.Pos;
+          pos.x = pos.x + Random(-50, 50);
+          pos.y = pos.y + Random(-50, 50);
+          pos.z = pos.z + Random(-50, 50);
+          pos.z = pos.z + 25;
+          Spawn("RTSmoke", pos, NO_REPLACE);
+        }
       }
       Stop;
   }

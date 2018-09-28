@@ -2,5 +2,7 @@ Sprite RTR0A0, 256, 256
 {
     // https://opengameart.org/content/smoke-aura (CC0)
     Offset 128, 128
+    XScale 1.5
+    YScale 1.5
     Patch RTR0A0, 0, 0 {}
 }
