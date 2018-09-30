@@ -2,6 +2,7 @@ Class Milso : RT_Weapon
 {
   Default {
     Weapon.SelectionOrder 1900;
+    Weapon.SlotNumber 1;
     Weapon.AmmoUse 1;
     Weapon.AmmoGive 20;
     Weapon.AmmoType1 "MilsoAmmoLoaded";
