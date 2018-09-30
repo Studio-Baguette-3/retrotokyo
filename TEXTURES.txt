@@ -11,3 +11,8 @@ Graphic XHAIRB1, 128, 128 {
     Offset 64, 64
     Patch XHAIRB1, 0, 0
 }
+
+Sprite ZR68A0, 455, 256 {
+    Offset 64, 64
+    Patch ZR68A0, 0, 0
+}

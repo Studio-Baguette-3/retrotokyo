@@ -1,3 +1,7 @@
 weapons/MilsoFire MILSOF
 weapons/MilsoEmpt MILSOE
 weapons/MilsoRelo MILSOR
+
+weapons/ZR68CFire ZR68CF
+weapons/ZR68CEmpt ZR68E
+weapons/ZR68CRelo ZR68R

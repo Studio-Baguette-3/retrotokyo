@@ -11,6 +11,7 @@ version "3.5"
 #include "zscript/support.zsc"
 
 #include "zscript/milso.zsc"
+#include "zscript/zr68c.zsc"
 #include "zscript/smokegrenade.zsc"
 
 #include "zscript/visionmodes.zsc"

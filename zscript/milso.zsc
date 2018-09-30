@@ -1,21 +1,12 @@
-Class Milso : RT_Weapon
+Class Milso : RT_Pistol
 {
   Default {
     Weapon.SelectionOrder 1900;
-    Weapon.SlotNumber 1;
-    Weapon.AmmoUse 1;
-    Weapon.AmmoGive 20;
     Weapon.AmmoType1 "MilsoAmmoLoaded";
-    Weapon.AmmoUse1 1;
-    Weapon.AmmoGive1 0;
     Weapon.AmmoType2 "MilsoAmmo";
-    Weapon.AmmoUse2 0;
-    Weapon.AmmoGive2 20;
     +Weapon.NoAlert;
-    +Weapon.Ammo_Optional;
     Inventory.Pickupmessage "Picked up a Milso.";
     AttackSound "weapons/MilsoFire";
-    decal "BulletChip";
   }
 
   States

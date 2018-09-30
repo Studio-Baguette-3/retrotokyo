@@ -1,7 +1,31 @@
 Class RT_Weapon : Weapon {
+    Default {
+        Weapon.AmmoUse 1;
+        Weapon.AmmoGive 20;
+        Weapon.AmmoUse1 1;
+        Weapon.AmmoGive1 0;
+        Weapon.AmmoUse2 0;
+        Weapon.AmmoGive2 20;
+        +Weapon.Ammo_Optional;
+        Inventory.Pickupmessage "Picked up a Weapon.";
+        decal "BulletChip";
+    }
+
 	override void PostBeginPlay()
 	{
         A_SetCrossHair(1);
         Super.PostBeginPlay();
     }
+}
+
+Class RT_Rifle : RT_Weapon {
+  Default {
+    Weapon.SlotNumber 2;
+  }
+}
+
+Class RT_Pistol : RT_Weapon {
+  Default {
+    Weapon.SlotNumber 1;
+  }
 }
