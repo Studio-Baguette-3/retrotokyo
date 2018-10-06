@@ -7,5 +7,9 @@ Class Assault : Doomplayer
         Player.startitem "ZR68CAmmo", 5;
         Player.startitem "ZR68CAmmoLoaded", 30;
         Player.DisplayName "Assault";
+        Player.ForwardMove 0.6, 0.4;
+        Player.SideMove 0.6, 0.4;
+        Player.ViewBob 0.4;
+        Player.JumpZ 7;
     }
 }
