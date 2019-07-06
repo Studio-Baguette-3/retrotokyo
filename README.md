@@ -12,3 +12,13 @@ The following external bits of code and assets are used in RetroTokyo:
 
 * Sound assets copyright Studio Radi-8, image assets (sprites) derived from Studio Radi-8's copyrighted work.
 * Coordinate helper class, Matrix Math helper class, Quaternion math helper class (C)2018 Marisa Kirisame, UnSX Team. (see `zscript/lib/mk_*.zsc`) Released under the GNU Lesser General Public License version 3 (or later).
+
+## Custom keys
+
+```
+bind c "toggle rt_motionvision"
+bind v "toggle rt_thermopticcamo"
+bind x "toggle rt_ghost"
+```
+
+Note that ghost enabling/disabling will be moved to the ghost item in the future.
