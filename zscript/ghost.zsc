@@ -1,0 +1,53 @@
+Class RT_Ghost : Weapon {
+    Default {
+        Weapon.AmmoUse 999;
+        Weapon.AmmoGive 0;
+        Weapon.AmmoUse1 9;
+        Weapon.AmmoGive1 0;
+        Weapon.AmmoUse2 9;
+        Weapon.AmmoGive2 0;
+        Weapon.SlotNumber 3;
+        +Weapon.Ammo_Optional;
+        +Weapon.NOALERT;
+        Inventory.Pickupmessage "Picked up the Ghost!";
+    }
+
+	override void PostBeginPlay()
+	{
+        A_SetCrossHair(1);
+        Super.PostBeginPlay();
+    }
+
+    void EnableGhost()
+    {
+        PlayerInfo p = players[consoleplayer];
+        Cvar.GetCVar("rt_ghost", p).SetBool(true);
+    }
+
+    void DisableGhost()
+    {
+        PlayerInfo p = players[consoleplayer];
+        Cvar.GetCVar("rt_ghost", p).SetBool(false);
+    }
+
+    States
+    {
+        Ready:
+            PUNG C 1 A_WeaponReady;
+            Loop;
+        Deselect:
+            PUNG C 1 A_Lower;
+            TNT1 A 0 {
+                invoker.DisableGhost();
+            }
+            Loop;
+        Select:
+            PUNG C 1 A_Raise;
+            TNT1 A 0 {
+                invoker.EnableGhost();
+            }
+            Loop;
+        Fire:
+            Goto Ready;
+    }
+}
