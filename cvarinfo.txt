@@ -1,3 +1,2 @@
-user bool rt_ghost = false;
 user bool rt_visionmode = false;
 user bool rt_thermopticcamo = false;

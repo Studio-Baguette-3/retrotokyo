@@ -47,8 +47,8 @@ Class RTHud : HUDMessageBase
     override void Draw(int bottom, int visibility)
     {
         PlayerInfo p = players[consoleplayer];
-        bool b = Cvar.GetCVar("rt_ghost", p).GetBool();
-        if (b)
+        RT_Ghost ghost = RT_Ghost(p.mo.FindInventory('RT_Ghost'));
+        if (ghost != null && ghost.active)
         {
             for (int i = 0; i < enemies.Size(); i++)
             {

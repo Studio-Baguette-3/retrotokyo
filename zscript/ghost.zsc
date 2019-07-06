@@ -1,4 +1,6 @@
 Class RT_Ghost : Weapon {
+    bool active;
+
     Default {
         Weapon.AmmoUse 999;
         Weapon.AmmoGive 0;
@@ -15,19 +17,18 @@ Class RT_Ghost : Weapon {
 	override void PostBeginPlay()
 	{
         A_SetCrossHair(1);
+        active = false;
         Super.PostBeginPlay();
     }
 
     void EnableGhost()
     {
-        PlayerInfo p = players[consoleplayer];
-        Cvar.GetCVar("rt_ghost", p).SetBool(true);
+        active = true;
     }
 
     void DisableGhost()
     {
-        PlayerInfo p = players[consoleplayer];
-        Cvar.GetCVar("rt_ghost", p).SetBool(false);
+        active = false;
     }
 
     States
