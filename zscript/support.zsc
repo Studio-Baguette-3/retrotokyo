@@ -6,6 +6,7 @@ Class Support : Doomplayer
         Player.startitem "SmokeGrenade", 5;
         Player.startitem "MilsoAmmo", 5;
         Player.startitem "MilsoAmmoLoaded", 12;
+        Player.startitem "RT_Ghost";
         Player.DisplayName "Support";
         Player.ForwardMove 0.4, 0.2;
         Player.SideMove 0.4, 0.2;
