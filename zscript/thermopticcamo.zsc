@@ -1,6 +1,7 @@
 class RT_ThermopticCamo : Inventory
 {
-    float aux;
+    float charge;
+    float maxcharge;
     bool prev_thermop_enabled;
 
 	default {
@@ -19,14 +20,14 @@ class RT_ThermopticCamo : Inventory
         }
 
         if (thermop_enabled) {
-            aux -= 0.1;
+            charge -= 1.0 / TICRATE;
         } else {
-            if (aux < 10) {
-                aux += 0.1;
+            if (charge < maxcharge) {
+                charge += 1.0 / TICRATE;
             }
         }
 
-        if (aux <= 0 && thermop_enabled) {
+        if (charge <= 0 && thermop_enabled) {
             Cvar.GetCVar("rt_thermopticcamo", p).SetBool(false);
         }
 
@@ -45,7 +46,8 @@ class RT_ThermopticCamo : Inventory
 	override void PostBeginPlay()
 	{
         A_Log("Got the thermoptic camo!");
-		aux = 10.0;
+		charge = 1.0;
+        maxcharge = 1.0;
         prev_thermop_enabled = false;
 	}
 
@@ -55,7 +57,8 @@ class RT_ThermopticCamo_Assault : RT_ThermopticCamo {
 	override void PostBeginPlay()
 	{
         Super.PostBeginPlay();
-		aux = 3.0;
+		charge = 8.0;
+        maxcharge = 8.0;
 	}
 }
 
@@ -63,7 +66,8 @@ class RT_ThermopticCamo_Recon : RT_ThermopticCamo {
 	override void PostBeginPlay()
 	{
         Super.PostBeginPlay();
-		aux = 12.0;
+		charge = 13.0;
+        maxcharge = 13.0;
 	}
 }
 	
