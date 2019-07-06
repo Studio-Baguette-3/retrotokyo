@@ -3,3 +3,10 @@ addplayerclass Recon
 addplayerclass Assault
 addplayerclass Support
 addplayerclass DoomPlayer
+addkeysection RetroTokyo RetroTokyo
+alias +rt_t_visionmode "set rt_visionmode true; rebind -rt_t_visionmode"
+alias -rt_t_visionmode "set rt_visionmode false; rebind +rt_t_visionmode"
+addmenukey "vision mode" "+rt_t_visionmode"
+alias +rt_t_thermopticcamo "set rt_thermopticcamo true; rebind -rt_t_thermopticcamo"
+alias -rt_t_thermopticcamo "set rt_thermopticcamo false; rebind +rt_t_thermopticcamo"
+addmenukey "thermoptic camouflage" "+rt_t_thermopticcamo"

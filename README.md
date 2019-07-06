@@ -15,10 +15,4 @@ The following external bits of code and assets are used in RetroTokyo:
 
 ## Custom keys
 
-```
-bind c "toggle rt_motionvision"
-bind v "toggle rt_thermopticcamo"
-bind x "toggle rt_ghost"
-```
-
-Note that ghost enabling/disabling will be moved to the ghost item in the future.
+RetroTokyo introduces the vision mode and thermoptic camouflage concepts from NeoTokyo, and as such you need to have controls for these concepts bound! Please check the options menu and bind these controls.
