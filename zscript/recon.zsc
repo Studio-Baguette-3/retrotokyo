@@ -6,6 +6,7 @@ Class Recon : Doomplayer
         Player.startitem "SmokeGrenade", 5;
         Player.startitem "MilsoAmmo", 5;
         Player.startitem "MilsoAmmoLoaded", 12;
+        Player.startitem "RT_ThermopticCamo_Recon", 1;
         Player.DisplayName "Recon";
         Player.ForwardMove 1, 1;
         Player.SideMove 1, 1;

@@ -6,6 +6,7 @@ Class Assault : Doomplayer
         Player.startitem "SmokeGrenade", 5;
         Player.startitem "ZR68CAmmo", 5;
         Player.startitem "ZR68CAmmoLoaded", 30;
+        Player.startitem "RT_ThermopticCamo_Assault", 1;
         Player.DisplayName "Assault";
         Player.ForwardMove 0.6, 0.4;
         Player.SideMove 0.6, 0.4;
