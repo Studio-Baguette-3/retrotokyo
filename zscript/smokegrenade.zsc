@@ -22,7 +22,6 @@ Class RTSmoke : Actor {
     Radius 60;
     Height 60;
     +NOGRAVITY;
-    +NOBLOCKMAP;
     +NOCLIP;
     +DONTSPLASH;
     +NOTELEPORT;
