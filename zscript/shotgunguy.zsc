@@ -1,9 +1,9 @@
-class ZombieManRT: ZombieMan replaces ZombieMan {
+class ShotgunGuyRT: ShotgunGuy replaces ShotgunGuy {
     Default {
         +NOINFIGHTING;
         Translation "112:119=200:207", "120:127=240:247";
         SeeSound "";
-        AttackSound "grunt/attack";
+        AttackSound "shotguy/attack";
         PainSound "player/male/pain50_1";
         DeathSound "player/male/death2";
         ActiveSound "";
@@ -30,12 +30,12 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
             PLAY B 2 SeekPlayer;
             Loop;
         See:
-            PLAY AABBCCDD 4 A_Chase;
+            PLAY AABBCCDD 3 A_Chase;
             Loop;
         Missile:
             PLAY E 10 A_FaceTarget;
-            PLAY F 8 A_PosAttack;
-            PLAY E 8;
+            PLAY F 10 Bright A_SPosAttackUseAtkSound;
+            PLAY E 10;
             Goto See;
         Pain:
             PLAY G 3;
@@ -56,8 +56,8 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
             PLAY U -1;
             Stop;
         Raise:
-            PLAY K 5;
-            PLAY JIH 5;
+            PLAY L 5;
+            PLAY KJIH 5;
             Goto See;
     }
 }

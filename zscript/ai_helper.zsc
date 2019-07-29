@@ -1,0 +1,35 @@
+class RT_Monster_AIHelper : Inventory
+{
+	default {
+		Inventory.MaxAmount 1;
+	}
+
+	void SeekPlayer() {
+		FLineTraceData testNode;
+		int offset = owner.angle + random(-30, 30);
+		int vangle = random(-15, 15);
+		owner.LineTrace(offset, 2048, vangle, TRF_ALLACTORS, owner.height - owner.height / 3, data: testNode);
+
+		PlayerInfo p = players[consoleplayer];
+		bool debug_enabled = Cvar.GetCVar("rt_debug", p).GetBool();
+		if (debug_enabled) {
+			for (int i = 0; i < 5; i++) {
+				Vector3 pos = owner.Pos;
+				pos.x = pos.x + Cos(offset) * 20 * i;
+				pos.y = pos.y + Sin(offset) * 20 * i;
+				pos.z = pos.z + (owner.height - (owner.height / 3)) + Tan(vangle) * 20 * i;
+				owner.Spawn("RTDebugParticle", pos, NO_REPLACE);
+			}
+		}
+
+		if (testNode.HitType == TRACE_HitActor && testNode.HitActor.player)
+		{
+			if (!testNode.HitActor.CheckInventory("PowerInvisibility", 1)) {
+				// A_LOG("Got you!");
+				owner.SetState(owner.ResolveState("See"));
+			} else {
+				// A_LOG("Thermoptic saved you!");
+			}
+		}
+	}
+}

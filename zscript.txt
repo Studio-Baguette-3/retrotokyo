@@ -16,10 +16,14 @@ version "3.5"
 #include "zscript/ghost.zsc"
 
 #include "zscript/visionmodes.zsc"
-#include "zscript/visionmodes_monsters.zsc"
 
 #include "zscript/thermopticcamo.zsc"
 
+#include "zscript/monster_modifier.zsc"
+#include "zscript/ai_helper.zsc"
+#include "zscript/visionmodes_monsters.zsc"
+
 #include "zscript/zombieman.zsc"
+#include "zscript/shotgunguy.zsc"
 
 #include "zscript/debug.zsc"
