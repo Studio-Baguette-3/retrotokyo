@@ -1,7 +1,7 @@
 class ZombieManRT: ZombieMan replaces ZombieMan {
     Default {
-
-     Translation "112:119=200:207", "120:127=240:247";
+        +NOINFIGHTING;
+        Translation "112:119=200:207", "120:127=240:247";
     }
 
     void SeekPlayer() {
