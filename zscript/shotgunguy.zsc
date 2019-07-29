@@ -1,7 +1,7 @@
 class ShotgunGuyRT: ShotgunGuy replaces ShotgunGuy {
     Default {
         +NOINFIGHTING;
-        Translation "112:119=200:207", "120:127=240:247";
+        Translation "112:119=176:183", "120:127=184:191";
         SeeSound "";
         AttackSound "shotguy/attack";
         PainSound "player/male/pain50_1";
