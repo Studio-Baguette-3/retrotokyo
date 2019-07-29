@@ -1,2 +1,3 @@
 user noarchive bool rt_visionmode = false;
 user noarchive bool rt_thermopticcamo = false;
+user bool rt_debug = false;

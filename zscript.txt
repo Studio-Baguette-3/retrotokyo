@@ -21,3 +21,5 @@ version "3.5"
 #include "zscript/thermopticcamo.zsc"
 
 #include "zscript/zombieman.zsc"
+
+#include "zscript/debug.zsc"

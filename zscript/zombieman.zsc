@@ -9,6 +9,19 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
         int offset = self.angle + random(-30, 30);
         int vangle = random(-15, 15);
         LineTrace(offset, 2048, vangle, TRF_ALLACTORS, height-height/3, data: testNode);
+
+		PlayerInfo p = players[consoleplayer];
+		bool debug_enabled = Cvar.GetCVar("rt_debug", p).GetBool();
+        if (debug_enabled) {
+            for (int i = 0; i < 5; i++) {
+                Vector3 pos = self.Pos;
+                pos.x = pos.x + Cos(offset) * 20 * i;
+                pos.y = pos.y + Sin(offset) * 20 * i;
+                pos.z = pos.z + (self.height - (self.height / 3)) + Tan(vangle) * 20 * i;
+                Spawn("RTDebugParticle", pos, NO_REPLACE);
+            }
+        }
+
         if (testNode.HitType == TRACE_HitActor && testNode.HitActor.player)
         {
             if (!testNode.HitActor.CheckInventory("PowerInvisibility", 1)) {
