@@ -46,6 +46,7 @@ Class RTHud : HUDMessageBase
 
     override void Draw(int bottom, int visibility)
     {
+        // Ghost
         PlayerInfo p = players[consoleplayer];
         RT_Ghost ghost = RT_Ghost(p.mo.FindInventory('RT_Ghost'));
         if (ghost != null && ghost.active)
@@ -54,6 +55,13 @@ Class RTHud : HUDMessageBase
             {
                 Screen.DrawTexture(beacon, false, enemies[i].vec.x - beaconsize.x * 0.5, enemies[i].vec.y - beaconsize.y * 0.5, DTA_RenderStyle, (1 | 2 << 8 | 1 << 16));
             }
+        }
+
+        // Thermoptic camo status
+        RT_ThermopticCamo thermoptic = RT_ThermopticCamo(p.mo.FindInventory('RT_ThermopticCamo', true));
+        if (thermoptic != null) {
+            String t = String.Format("THERMOPTIC %.1f / %.1f", thermoptic.charge, thermoptic.maxcharge);
+            Screen.drawText(smallfont, Font.CR_CYAN, 10, 400, t, DTA_KeepRatio, false, DTA_VirtualWidth, 640, DTA_VirtualHeight, 480);
         }
     }
 }
