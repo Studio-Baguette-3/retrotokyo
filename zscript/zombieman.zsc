@@ -1,0 +1,66 @@
+class ZombieManRT: ZombieMan replaces ZombieMan {
+    Default {
+
+     Translation "112:119=200:207", "120:127=240:247";
+    }
+
+    void SeekPlayer() {
+        FLineTraceData testNode;
+        int offset = self.angle + random(-45, 45);
+        LineTrace(offset, 2048, 0, TRF_THRUHITSCAN, height/2, data: testNode);
+        if (testNode.HitType == TRACE_HitActor && testNode.HitActor.player)
+        {
+            if (!testNode.HitActor.CheckInventory("PowerInvisibility", 1)) {
+                // A_LOG("Got you!");
+                SetState(ResolveState("See"));
+            } else {
+                // A_LOG("Thermoptic saved you!");
+            }
+        }
+    }
+
+    States {
+	Spawn:
+		PLAY A 2 SeekPlayer;
+        PLAY A 2 SeekPlayer;
+        PLAY A 2 SeekPlayer;
+        PLAY A 2 SeekPlayer;
+        PLAY A 2 SeekPlayer;
+		PLAY B 2 SeekPlayer;
+        PLAY B 2 SeekPlayer;
+        PLAY B 2 SeekPlayer;
+        PLAY B 2 SeekPlayer;
+        PLAY B 2 SeekPlayer;
+		Loop;
+	See:
+		PLAY AABBCCDD 4 A_Chase;
+		Loop;
+	Missile:
+		PLAY E 10 A_FaceTarget;
+		PLAY F 8 A_PosAttack;
+		PLAY E 8;
+		Goto See;
+	Pain:
+		PLAY G 3;
+		PLAY G 3 A_Pain;
+		Goto See;
+	Death:
+		PLAY H 5;
+		PLAY I 5 A_Scream;
+		PLAY J 5 A_NoBlocking;
+		PLAY K 5;
+		PLAY L -1;
+		Stop;
+	XDeath:
+		PLAY M 5;
+		PLAY N 5 A_XScream;
+		PLAY O 5 A_NoBlocking;
+		PLAY PQRST 5;
+		PLAY U -1;
+		Stop;
+	Raise:
+		PLAY K 5;
+		PLAY JIH 5;
+		Goto See;
+    }
+}

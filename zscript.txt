@@ -19,3 +19,5 @@ version "3.5"
 #include "zscript/visionmodes_monsters.zsc"
 
 #include "zscript/thermopticcamo.zsc"
+
+#include "zscript/zombieman.zsc"
