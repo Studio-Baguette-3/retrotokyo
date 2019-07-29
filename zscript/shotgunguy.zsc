@@ -15,6 +15,9 @@ class ShotgunGuyRT: ShotgunGuy replaces ShotgunGuy {
         Idle:
             PLAY AB 10;
             Loop;
+        Wander:
+            PLAY AB 10 A_Wander;
+            Loop;
         See:
             PLAY AABBCCDD 3 A_Chase;
             Loop;

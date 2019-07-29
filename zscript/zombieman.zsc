@@ -15,6 +15,9 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
         Idle:
             PLAY AB 10;
             Loop;
+        Wander:
+            PLAY AB 10 A_Wander;
+            Loop;
         See:
             PLAY AABBCCDD 4 A_Chase;
             Loop;

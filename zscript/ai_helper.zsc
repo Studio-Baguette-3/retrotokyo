@@ -39,7 +39,7 @@ class RT_Monster_AIHelper : Inventory
 				return false;
 			}
 		}
-		
+
 		return false;
 	}
 
@@ -49,7 +49,7 @@ class RT_Monster_AIHelper : Inventory
 			return;
 		}
 		
-		if (InStateSequence(owner.CurState, owner.ResolveState("Idle"))) {
+		if (InStateSequence(owner.CurState, owner.ResolveState("Idle")) || InStateSequence(owner.CurState, owner.ResolveState("Wander"))) {
 			bool foundPlayer = SeekPlayer(false);
 			if (foundPlayer) {
 				owner.SetState(owner.ResolveState("See"));
@@ -63,7 +63,7 @@ class RT_Monster_AIHelper : Inventory
 			} else {
 				if (timeSinceLastSeen > 8) {
 					// A_LOG("Where did they go...?");
-					owner.SetState(owner.ResolveState("Idle"));
+					owner.SetState(owner.ResolveState("Wander"));
 				}
 			}
 		}
