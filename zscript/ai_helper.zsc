@@ -22,9 +22,11 @@ class RT_Monster_AIHelper : Inventory
 				pos.y = pos.y + Sin(offset) * 20 * i;
 				pos.z = pos.z + (owner.height - (owner.height / 3)) + Tan(vangle) * 20 * i;
 				if (!hasSeenPlayer) {
-					owner.Spawn("RTDebugParticle", pos, NO_REPLACE);
+					//owner.Spawn("RTDebugParticle", pos, NO_REPLACE);
+					A_SpawnParticle(0xFF00FF, SPF_FULLBRIGHT, 35, 10, 0, pos.x, pos.y, pos.z);
 				} else {
-					owner.Spawn("RTDebugParticle2", pos, NO_REPLACE);
+					//owner.Spawn("RTDebugParticle2", pos, NO_REPLACE);
+					A_SpawnParticle(0xFFFF00, SPF_FULLBRIGHT, 35, 10, 0, pos.x, pos.y, pos.z);
 				}
 			}
 		}
