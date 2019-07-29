@@ -2,6 +2,7 @@ class RT_Monster_AIHelper : Inventory
 {
 	default {
 		Inventory.MaxAmount 1;
+		+INVENTORY.PERSISTENTPOWER;
 	}
 
 	void SeekPlayer() {
