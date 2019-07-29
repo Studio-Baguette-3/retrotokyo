@@ -67,6 +67,11 @@ class RT_Monster_AIHelper : Inventory
 				}
 			}
 		}
+
+		if (InStateSequence(owner.CurState, owner.ResolveState("Missile"))) {
+			// Reset timeSinceLastSeen when the monster is firing, as obviously they're looking at the target right then!
+			timeSinceLastSeen = 0.0;
+		}
 	}
 
 
