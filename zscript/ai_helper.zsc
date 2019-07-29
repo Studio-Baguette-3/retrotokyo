@@ -1,11 +1,13 @@
 class RT_Monster_AIHelper : Inventory
 {
+	float timeSinceLastSeen;
+
 	default {
 		Inventory.MaxAmount 1;
 		+INVENTORY.PERSISTENTPOWER;
 	}
 
-	void SeekPlayer() {
+	bool SeekPlayer(bool hasSeenPlayer) {
 		FLineTraceData testNode;
 		int offset = owner.angle + random(-30, 30);
 		int vangle = random(-15, 15);
@@ -19,7 +21,11 @@ class RT_Monster_AIHelper : Inventory
 				pos.x = pos.x + Cos(offset) * 20 * i;
 				pos.y = pos.y + Sin(offset) * 20 * i;
 				pos.z = pos.z + (owner.height - (owner.height / 3)) + Tan(vangle) * 20 * i;
-				owner.Spawn("RTDebugParticle", pos, NO_REPLACE);
+				if (!hasSeenPlayer) {
+					owner.Spawn("RTDebugParticle", pos, NO_REPLACE);
+				} else {
+					owner.Spawn("RTDebugParticle2", pos, NO_REPLACE);
+				}
 			}
 		}
 
@@ -27,11 +33,14 @@ class RT_Monster_AIHelper : Inventory
 		{
 			if (!testNode.HitActor.CheckInventory("PowerInvisibility", 1)) {
 				// A_LOG("Got you!");
-				owner.SetState(owner.ResolveState("See"));
+				return true;
 			} else {
 				// A_LOG("Thermoptic saved you!");
+				return false;
 			}
 		}
+		
+		return false;
 	}
 
 	override void DoEffect() {
@@ -41,7 +50,28 @@ class RT_Monster_AIHelper : Inventory
 		}
 		
 		if (InStateSequence(owner.CurState, owner.ResolveState("Idle"))) {
-			SeekPlayer();
+			bool foundPlayer = SeekPlayer(false);
+			if (foundPlayer) {
+				owner.SetState(owner.ResolveState("See"));
+				timeSinceLastSeen = 0.0;
+			}
+		} else if (InStateSequence(owner.CurState, owner.ResolveState("See"))) {
+			timeSinceLastSeen += 1.0 / TICRATE;
+			bool foundPlayer = SeekPlayer(true);
+			if (foundPlayer) {
+				timeSinceLastSeen = 0.0;
+			} else {
+				if (timeSinceLastSeen > 8) {
+					// A_LOG("Where did they go...?");
+					owner.SetState(owner.ResolveState("Idle"));
+				}
+			}
 		}
+	}
+
+
+	override void PostBeginPlay()
+	{
+		timeSinceLastSeen = 0.0;
 	}
 }

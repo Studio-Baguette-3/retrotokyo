@@ -17,3 +17,12 @@ Class RTDebugParticle : Actor {
       stop;
   }
 }
+
+Class RTDebugParticle2 : RTDebugParticle {
+  States
+  {
+    Spawn:
+      RTDP B 20 BRIGHT;
+      stop;
+  }
+}
