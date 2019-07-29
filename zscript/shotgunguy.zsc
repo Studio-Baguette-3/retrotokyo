@@ -9,25 +9,11 @@ class ShotgunGuyRT: ShotgunGuy replaces ShotgunGuy {
         ActiveSound "";
     }
 
-    void SeekPlayer() {
-        RT_Monster_AIHelper ai = RT_Monster_AIHelper(self.FindInventory('RT_Monster_AIHelper'));
-        if (ai) {
-            ai.SeekPlayer();
-        }
-    }
-
     States {
         Spawn:
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
+            Goto Idle;
+        Idle:
+            PLAY AB 10;
             Loop;
         See:
             PLAY AABBCCDD 3 A_Chase;

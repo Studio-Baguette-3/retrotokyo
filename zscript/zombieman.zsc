@@ -9,25 +9,11 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
         ActiveSound "";
     }
 
-    void SeekPlayer() {
-        RT_Monster_AIHelper ai = RT_Monster_AIHelper(self.FindInventory('RT_Monster_AIHelper'));
-        if (ai) {
-            ai.SeekPlayer();
-        }
-    }
-
     States {
         Spawn:
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY A 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
-            PLAY B 2 SeekPlayer;
+            Goto Idle;
+        Idle:
+            PLAY AB 10;
             Loop;
         See:
             PLAY AABBCCDD 4 A_Chase;

@@ -33,4 +33,15 @@ class RT_Monster_AIHelper : Inventory
 			}
 		}
 	}
+
+	override void DoEffect() {
+		super.DoEffect();
+		if (!owner) {
+			return;
+		}
+		
+		if (InStateSequence(owner.CurState, owner.ResolveState("Idle"))) {
+			SeekPlayer();
+		}
+	}
 }
