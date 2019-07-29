@@ -7,7 +7,8 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
     void SeekPlayer() {
         FLineTraceData testNode;
         int offset = self.angle + random(-30, 30);
-        LineTrace(offset, 2048, 0, TRF_ALLACTORS, height/2, data: testNode);
+        int vangle = random(-15, 15);
+        LineTrace(offset, 2048, vangle, TRF_ALLACTORS, height-height/3, data: testNode);
         if (testNode.HitType == TRACE_HitActor && testNode.HitActor.player)
         {
             if (!testNode.HitActor.CheckInventory("PowerInvisibility", 1)) {
