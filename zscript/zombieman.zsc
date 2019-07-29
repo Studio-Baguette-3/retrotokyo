@@ -10,8 +10,8 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
         int vangle = random(-15, 15);
         LineTrace(offset, 2048, vangle, TRF_ALLACTORS, height-height/3, data: testNode);
 
-		PlayerInfo p = players[consoleplayer];
-		bool debug_enabled = Cvar.GetCVar("rt_debug", p).GetBool();
+        PlayerInfo p = players[consoleplayer];
+        bool debug_enabled = Cvar.GetCVar("rt_debug", p).GetBool();
         if (debug_enabled) {
             for (int i = 0; i < 5; i++) {
                 Vector3 pos = self.Pos;
@@ -34,47 +34,47 @@ class ZombieManRT: ZombieMan replaces ZombieMan {
     }
 
     States {
-	Spawn:
-		PLAY A 2 SeekPlayer;
-        PLAY A 2 SeekPlayer;
-        PLAY A 2 SeekPlayer;
-        PLAY A 2 SeekPlayer;
-        PLAY A 2 SeekPlayer;
-		PLAY B 2 SeekPlayer;
-        PLAY B 2 SeekPlayer;
-        PLAY B 2 SeekPlayer;
-        PLAY B 2 SeekPlayer;
-        PLAY B 2 SeekPlayer;
-		Loop;
-	See:
-		PLAY AABBCCDD 4 A_Chase;
-		Loop;
-	Missile:
-		PLAY E 10 A_FaceTarget;
-		PLAY F 8 A_PosAttack;
-		PLAY E 8;
-		Goto See;
-	Pain:
-		PLAY G 3;
-		PLAY G 3 A_Pain;
-		Goto See;
-	Death:
-		PLAY H 5;
-		PLAY I 5 A_Scream;
-		PLAY J 5 A_NoBlocking;
-		PLAY K 5;
-		PLAY L -1;
-		Stop;
-	XDeath:
-		PLAY M 5;
-		PLAY N 5 A_XScream;
-		PLAY O 5 A_NoBlocking;
-		PLAY PQRST 5;
-		PLAY U -1;
-		Stop;
-	Raise:
-		PLAY K 5;
-		PLAY JIH 5;
-		Goto See;
+        Spawn:
+            PLAY A 2 SeekPlayer;
+            PLAY A 2 SeekPlayer;
+            PLAY A 2 SeekPlayer;
+            PLAY A 2 SeekPlayer;
+            PLAY A 2 SeekPlayer;
+            PLAY B 2 SeekPlayer;
+            PLAY B 2 SeekPlayer;
+            PLAY B 2 SeekPlayer;
+            PLAY B 2 SeekPlayer;
+            PLAY B 2 SeekPlayer;
+            Loop;
+        See:
+            PLAY AABBCCDD 4 A_Chase;
+            Loop;
+        Missile:
+            PLAY E 10 A_FaceTarget;
+            PLAY F 8 A_PosAttack;
+            PLAY E 8;
+            Goto See;
+        Pain:
+            PLAY G 3;
+            PLAY G 3 A_Pain;
+            Goto See;
+        Death:
+            PLAY H 5;
+            PLAY I 5 A_Scream;
+            PLAY J 5 A_NoBlocking;
+            PLAY K 5;
+            PLAY L -1;
+            Stop;
+        XDeath:
+            PLAY M 5;
+            PLAY N 5 A_XScream;
+            PLAY O 5 A_NoBlocking;
+            PLAY PQRST 5;
+            PLAY U -1;
+            Stop;
+        Raise:
+            PLAY K 5;
+            PLAY JIH 5;
+            Goto See;
     }
 }
