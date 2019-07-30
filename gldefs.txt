@@ -21,3 +21,17 @@ HardwareShader PostProcess scene
 	Texture NoiseTexture "textures/noise.png"
 	Uniform float timer
 }
+
+pulselight THERMOPTIC_FLASH_1
+{
+   color 1.0 1.0 1.0
+   size 128
+   secondarySize 32
+   interval 0.125
+   offset 0 20 0
+}
+
+object RT_ThermopticCamoFlash
+{
+    frame TNT1A { light THERMOPTIC_FLASH_1 }
+}

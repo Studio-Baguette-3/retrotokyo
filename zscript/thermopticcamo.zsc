@@ -17,6 +17,8 @@ class RT_ThermopticCamo : Inventory
 
         if (thermop_enabled && !prev_thermop_enabled) {
             owner.A_GiveInventory("PowerInvisibility");
+            Actor a = owner.Spawn("RT_ThermopticCamoFlash");
+            a.SetXYZ(owner.pos);
         }
 
         if (thermop_enabled) {
@@ -71,3 +73,12 @@ class RT_ThermopticCamo_Recon : RT_ThermopticCamo {
 	}
 }
 	
+class RT_ThermopticCamoFlash : Actor {
+    Default {
+    }
+        States {
+            Spawn:
+                TNT1 A 4;
+                Goto Death;
+        }
+}
