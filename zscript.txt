@@ -13,6 +13,7 @@ version "3.5"
 #include "zscript/milso.zsc"
 #include "zscript/zr68c.zsc"
 #include "zscript/smokegrenade.zsc"
+#include "zscript/detpack.zsc"
 #include "zscript/ghost.zsc"
 
 #include "zscript/visionmodes.zsc"

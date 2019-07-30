@@ -2,8 +2,8 @@ Class Recon : Doomplayer
 {
     Default {
         Player.startitem "Milso";
-        Player.startitem "SmokeGrenadeHand";
-        Player.startitem "SmokeGrenade", 5;
+        Player.startitem "DetpackHand";
+        Player.startitem "Detpack", 1;
         Player.startitem "MilsoAmmo", 5;
         Player.startitem "MilsoAmmoLoaded", 12;
         Player.startitem "RT_Ghost";

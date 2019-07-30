@@ -1,0 +1,100 @@
+Class Detpack : Ammo
+{
+    Default {
+        Inventory.PickupMessage "Got a detpack!";
+        Inventory.Amount 1;
+        Inventory.MaxAmount 1;
+        Inventory.Icon "CLIPA0";
+        Ammo.BackpackAmount 1;
+        Ammo.BackpackMaxAmount 1;
+    }
+
+    States
+    {
+        Spawn:
+            CLIP A -1;
+            Stop;
+    }
+}
+
+Class DetpackFloor : Actor
+{
+    Default {}
+    States {
+        Spawn:
+            CLIP A 1 nodelay Thing_ChangeTid(0, 4261);
+            Goto Idle;
+        Idle:
+            CLIP A -1;
+            Loop;
+        Death:
+            MISL B 8 BRIGHT {
+                A_Explode(100, 128);
+            }
+            Stop;
+    }
+}
+
+Class DetpackProjectile : Grenade
+{
+    Default {
+        Gravity 0.5;
+        Speed 6;
+        BounceFactor 0.01;
+        WallBounceFactor 0.01;
+        BounceType "Hexen";
+        BounceCount 3;
+        Friction 5;
+    }
+
+    States
+    {
+        Death:
+            TNT1 A 1 {
+                Spawn("DetpackFloor", pos, NO_REPLACE);
+            }
+            Stop;
+    }
+}
+
+Class DetpackHand : Pistol
+{
+    Default {
+        Weapon.SlotNumber 2;
+        Weapon.AmmoType "Detpack";
+        Weapon.AmmoGive 1;
+        +Weapon.NoAlert;
+        +Weapon.Ammo_Optional;
+        +Weapon.NOALERT;
+    }
+
+    States
+    {
+        Ready:
+            PUNG A 1 A_WeaponReady;
+            Loop;
+        Deselect:
+            PUNG A 1 A_Lower;
+            Loop;
+        Select:
+            PUNG A 1 A_Raise;
+            Loop;
+        Fire:
+            PUNG A 1 A_JumpIfNoAmmo("NoAmmo");
+            PUNG B 1 A_FireCustomMissile("DetpackProjectile");
+            PUNG A 1 A_CheckReload;
+            PUNG A 1 A_Refire;
+            Goto Ready;
+        NoAmmo:
+            Goto Ready;
+        AltFire:
+            PUNG A 1 {
+                ThinkerIterator t = ThinkerIterator.Create("DetpackFloor");
+                DetpackFloor d;
+                while (d = DetpackFloor(t.Next())) {
+                    d.SetState(d.ResolveState("Death"));
+                }
+            }
+            Goto Ready;
+    }
+}
