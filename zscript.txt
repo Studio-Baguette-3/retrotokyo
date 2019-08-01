@@ -26,6 +26,7 @@ version "3.5"
 
 #include "zscript/monsters/zombieman.zsc"
 #include "zscript/monsters/shotgunguy.zsc"
+#include "zscript/monsters/spidertank.zsc"
 
 #include "zscript/tracer.zsc"
 #include "zscript/debug.zsc"
