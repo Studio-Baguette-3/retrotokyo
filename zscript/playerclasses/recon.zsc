@@ -13,5 +13,6 @@ Class Recon : Doomplayer
         Player.SideMove 1, 1;
         Player.ViewBob 0.4;
         Player.JumpZ 10;
+        Gravity 0.9;
     }
 }
