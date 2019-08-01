@@ -12,6 +12,7 @@ The following external bits of code and assets are used in RetroTokyo:
 
 * Sound assets copyright Studio Radi-8, image assets (sprites) derived from Studio Radi-8's copyrighted work.
 * Coordinate helper class, Matrix Math helper class, Quaternion math helper class (C)2018 Marisa Kirisame, UnSX Team. (see `zscript/lib/mk_*.zsc`) Released under the GNU Lesser General Public License version 3 (or later).
+* Tracer model and texture (models/BulletTracer) from [ZScript Weapons Library](https://gitlab.com/dodopod/zscript-weapons-library)
 
 ## Custom keys
 

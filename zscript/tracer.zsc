@@ -1,0 +1,13 @@
+Class RTWeaponTracer : FastProjectile {
+  Default {
+    Speed 100;
+    RenderStyle "Add";
+  }
+  
+  States
+  {
+    Spawn:
+      TRAC A 1;
+      loop;
+  }
+}

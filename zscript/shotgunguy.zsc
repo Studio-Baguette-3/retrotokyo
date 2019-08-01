@@ -23,7 +23,8 @@ class ShotgunGuyRT: ShotgunGuy replaces ShotgunGuy {
             Loop;
         Missile:
             PLAY E 10 A_FaceTarget;
-            PLAY F 10 Bright A_SPosAttackUseAtkSound;
+            PLAY F 0 Bright A_PlaySound("shotguy/attack", CHAN_WEAPON);
+            PLAY F 10 bright A_CustomBulletAttack(22.5, 0, 3, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM, AAPTR_TARGET, "RTWeaponTracer");
             PLAY E 10;
             Goto See;
         Pain:

@@ -1,0 +1,11 @@
+Model RTWeaponTracer
+{
+  Path "models/BulletTracer"
+  Model 0 "BulletTracer.md3"
+  Skin 0 "BulletTracer.png"
+  Scale 3 3 3
+  AngleOffset 90
+  DontCullBackfaces
+  PitchFromMomentum
+  FrameIndex TRAC A 0 0
+}

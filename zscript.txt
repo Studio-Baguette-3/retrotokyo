@@ -27,4 +27,5 @@ version "3.5"
 #include "zscript/zombieman.zsc"
 #include "zscript/shotgunguy.zsc"
 
+#include "zscript/tracer.zsc"
 #include "zscript/debug.zsc"
