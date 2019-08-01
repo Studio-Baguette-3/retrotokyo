@@ -6,26 +6,26 @@ version "3.5"
 
 #include "zscript/rt_weapon.zsc"
 
-#include "zscript/recon.zsc"
-#include "zscript/assault.zsc"
-#include "zscript/support.zsc"
+#include "zscript/playerclasses/recon.zsc"
+#include "zscript/playerclasses/assault.zsc"
+#include "zscript/playerclasses/support.zsc"
 
-#include "zscript/milso.zsc"
-#include "zscript/zr68c.zsc"
-#include "zscript/smokegrenade.zsc"
-#include "zscript/detpack.zsc"
-#include "zscript/ghost.zsc"
+#include "zscript/weapons/milso.zsc"
+#include "zscript/weapons/zr68c.zsc"
+#include "zscript/weapons/smokegrenade.zsc"
+#include "zscript/weapons/detpack.zsc"
+#include "zscript/special/ghost.zsc"
 
 #include "zscript/visionmodes.zsc"
 
-#include "zscript/thermopticcamo.zsc"
+#include "zscript/special/thermopticcamo.zsc"
 
 #include "zscript/monster_modifier.zsc"
 #include "zscript/ai_helper.zsc"
 #include "zscript/visionmodes_monsters.zsc"
 
-#include "zscript/zombieman.zsc"
-#include "zscript/shotgunguy.zsc"
+#include "zscript/monsters/zombieman.zsc"
+#include "zscript/monsters/shotgunguy.zsc"
 
 #include "zscript/tracer.zsc"
 #include "zscript/debug.zsc"
