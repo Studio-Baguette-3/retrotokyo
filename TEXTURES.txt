@@ -16,3 +16,89 @@ Sprite ZR68A0, 455, 256 {
     Offset 64, 64
     Patch ZR68A0, 0, 0
 }
+
+// Override all Spider Mastermind images with Spidertank images
+Sprite SPIDA0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDB0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDC0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDD0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDE0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDF0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDG0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDH0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDI0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDJ0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDK0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
+Sprite SPIDS0, 440, 219
+{
+    Offset 220, 180
+    XScale 1.3
+    YScale 1.3
+    Patch STNKA0, 0, 0
+}
