@@ -1,4 +1,5 @@
 class SpiderTankRT: SpiderMastermind replaces SpiderMastermind {
+    float strafe_fire_i;
     Default {
         +NOINFIGHTING;
         Translation "112:119=200:207", "120:127=240:247";
@@ -7,6 +8,12 @@ class SpiderTankRT: SpiderMastermind replaces SpiderMastermind {
         PainSound "player/male/pain50_1";
         DeathSound "player/male/death2";
         ActiveSound "";
+        Speed 0;
+    }
+
+    override void PostBeginPlay()
+    {
+        strafe_fire_i = 30;
     }
 
     States {
@@ -21,13 +28,27 @@ class SpiderTankRT: SpiderMastermind replaces SpiderMastermind {
             SPID E 3 A_Metal;
             SPID EFF 3 A_Chase;
             Loop;
+        ShootSmoke:
+            SPID A 30 Bright;
+            SPID G 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 48, 0, -90);
+            SPID G 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 48, 0, 0);
+            SPID G 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 48, 0, 90);
+            SPID A 30 Bright;
+            Goto See;
         Missile:
-            SPID A 20 Bright A_FaceTarget;
+            SPID A 20 Bright;
+            SPID G 0 Bright {
+                A_FaceTarget();
+                strafe_fire_i -= 3;
+                if (strafe_fire_i < -30) {
+                    strafe_fire_i = 30;
+                    SetState(ResolveState("ShootSmoke"));
+                }
+            }
             SPID G 0 Bright A_PlaySound("spider/attack", CHAN_WEAPON);
-            SPID G 4 bright A_CustomBulletAttack(22.5, 0, 3, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM, AAPTR_TARGET, "RTWeaponTracer");
+            SPID G 2 Bright A_CustomBulletAttack(strafe_fire_i, random(-1,1), 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM | CBAF_AIMFACING | CBAF_EXPLICITANGLE, AAPTR_TARGET, "RTWeaponTracer");
             SPID G 0 Bright A_PlaySound("spider/attack", CHAN_WEAPON);
-            SPID H 4 bright A_CustomBulletAttack(22.5, 0, 3, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM, AAPTR_TARGET, "RTWeaponTracer");
-            SPID H 1 Bright A_SpidRefire;
+            SPID H 2 Bright A_CustomBulletAttack(strafe_fire_i, random(-1,1), 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM | CBAF_AIMFACING | CBAF_EXPLICITANGLE, AAPTR_TARGET, "RTWeaponTracer");
             Goto Missile+1;
         Pain:
             SPID I 3;
