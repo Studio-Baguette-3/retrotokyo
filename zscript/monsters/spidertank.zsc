@@ -18,26 +18,26 @@ class SpiderTankRT: SpiderMastermind replaces SpiderMastermind {
 
     States {
         Spawn:
-            SPID AB 10 A_Look;
+            STNK A 10 A_Look;
             Loop;
         See:
-            SPID A 3 A_Metal;
-            SPID ABB 3 A_Chase;
-            SPID C 3 A_Metal;
-            SPID CDD 3 A_Chase;
-            SPID E 3 A_Metal;
-            SPID EFF 3 A_Chase;
+            STNK A 3 A_Metal;
+            STNK AAA 3 A_Chase; // ABB
+            STNK A 3 A_Metal; // C
+            STNK AAA 3 A_Chase; // CCD
+            STNK A 3 A_Metal; // E
+            STNK AAA 3 A_Chase; // EFF
             Loop;
         ShootSmoke:
-            SPID A 30 Bright;
-            SPID G 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 48, 0, -90);
-            SPID G 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 48, 0, 0);
-            SPID G 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 48, 0, 90);
-            SPID A 30 Bright;
+            STNK A 30 Bright;
+            STNK A 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 120, 0, -90, CMF_AIMDIRECTION , -20); // G
+            STNK A 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 120, 0, 0, CMF_AIMDIRECTION , -20); // G
+            STNK A 0 Bright  A_CustomMissile("SmokeGrenadeProjectile", 120, 0, 90, CMF_AIMDIRECTION , -20); // G
+            STNK A 30 Bright;
             Goto See;
         Missile:
-            SPID A 20 Bright;
-            SPID G 0 Bright {
+            STNK A 20 Bright;
+            STNK A 0 Bright { // G
                 A_FaceTarget();
                 strafe_fire_i -= 3;
                 if (strafe_fire_i < -30) {
@@ -45,21 +45,21 @@ class SpiderTankRT: SpiderMastermind replaces SpiderMastermind {
                     SetState(ResolveState("ShootSmoke"));
                 }
             }
-            SPID G 0 Bright A_PlaySound("spider/attack", CHAN_WEAPON);
-            SPID G 2 Bright A_CustomBulletAttack(strafe_fire_i, random(-1,1), 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM | CBAF_AIMFACING | CBAF_EXPLICITANGLE, AAPTR_TARGET, "RTWeaponTracer");
-            SPID G 0 Bright A_PlaySound("spider/attack", CHAN_WEAPON);
-            SPID H 2 Bright A_CustomBulletAttack(strafe_fire_i, random(-1,1), 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM | CBAF_AIMFACING | CBAF_EXPLICITANGLE, AAPTR_TARGET, "RTWeaponTracer");
+            STNK A 0 Bright A_PlaySound("spider/attack", CHAN_WEAPON);  // G
+            STNK A 2 Bright A_CustomBulletAttack(strafe_fire_i, random(-1,1), 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM | CBAF_AIMFACING | CBAF_EXPLICITANGLE, AAPTR_TARGET, "RTWeaponTracer", 70);  // G
+            STNK A 0 Bright A_PlaySound("spider/attack", CHAN_WEAPON); // G
+            STNK A 2 Bright A_CustomBulletAttack(strafe_fire_i, random(-1,1), 1, random(1,5)*3, "BulletPuff", 0, CBAF_NORANDOM | CBAF_AIMFACING | CBAF_EXPLICITANGLE, AAPTR_TARGET, "RTWeaponTracer", 70); // H
             Goto Missile+1;
         Pain:
-            SPID I 3;
-            SPID I 3 A_Pain;
+            STNK A 3; // I
+            STNK A 3 A_Pain; // I
             Goto See;
         Death:
-            SPID J 20 A_Scream;
-            SPID K 10 A_NoBlocking;
-            SPID LMNOPQR 10;
-            SPID S 30;
-            SPID S -1 A_BossDeath;
+            STNK A 20 A_Scream; // J
+            STNK A 10 A_NoBlocking; // K
+            STNK AAAAAAA 10; // LMNOPQR
+            STNK A 30; // S
+            STNK A -1 A_BossDeath; // S
             Stop;
     }
 }
