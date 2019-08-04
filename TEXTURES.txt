@@ -650,3 +650,372 @@ Sprite STNKAG, 1024, 768
     YScale 1.3
     Patch STNKAG, 0, 0
 }
+
+
+
+Sprite GHOAA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAA0, 0, 0
+}
+Sprite GHOAB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAB0, 0, 0
+}
+Sprite GHOAC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAC0, 0, 0
+}
+Sprite GHOAD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAD0, 0, 0
+}
+Sprite GHOAE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAE0, 0, 0
+}
+Sprite GHOAF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAF0, 0, 0
+}
+Sprite GHOAG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAG0, 0, 0
+}
+Sprite GHOAH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAH0, 0, 0
+}
+Sprite GHOAI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAI0, 0, 0
+}
+Sprite GHOAJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOAJ0, 0, 0
+}
+Sprite GHOBA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBA0, 0, 0
+}
+Sprite GHOBB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBB0, 0, 0
+}
+Sprite GHOBC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBC0, 0, 0
+}
+Sprite GHOBD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBD0, 0, 0
+}
+Sprite GHOBE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBE0, 0, 0
+}
+Sprite GHOBF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBF0, 0, 0
+}
+Sprite GHOBG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBG0, 0, 0
+}
+Sprite GHOBH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBH0, 0, 0
+}
+Sprite GHOBI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBI0, 0, 0
+}
+Sprite GHOBJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOBJ0, 0, 0
+}
+Sprite GHOCA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCA0, 0, 0
+}
+Sprite GHOCB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCB0, 0, 0
+}
+Sprite GHOCC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCC0, 0, 0
+}
+Sprite GHOCD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCD0, 0, 0
+}
+Sprite GHOCE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCE0, 0, 0
+}
+Sprite GHOCF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCF0, 0, 0
+}
+Sprite GHOCG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCG0, 0, 0
+}
+Sprite GHOCH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCH0, 0, 0
+}
+Sprite GHOCI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCI0, 0, 0
+}
+Sprite GHOCJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOCJ0, 0, 0
+}
+Sprite GHODA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODA0, 0, 0
+}
+Sprite GHODB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODB0, 0, 0
+}
+Sprite GHODC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODC0, 0, 0
+}
+Sprite GHODD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODD0, 0, 0
+}
+Sprite GHODE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODE0, 0, 0
+}
+Sprite GHODF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODF0, 0, 0
+}
+Sprite GHODG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODG0, 0, 0
+}
+Sprite GHODH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODH0, 0, 0
+}
+Sprite GHODI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODI0, 0, 0
+}
+Sprite GHODJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHODJ0, 0, 0
+}
+Sprite GHOEA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEA0, 0, 0
+}
+Sprite GHOEB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEB0, 0, 0
+}
+Sprite GHOEC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEC0, 0, 0
+}
+Sprite GHOED0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOED0, 0, 0
+}
+Sprite GHOEE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEE0, 0, 0
+}
+Sprite GHOEF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEF0, 0, 0
+}
+Sprite GHOEG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEG0, 0, 0
+}
+Sprite GHOEH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEH0, 0, 0
+}
+Sprite GHOEI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEI0, 0, 0
+}
+Sprite GHOEJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOEJ0, 0, 0
+}
+Sprite GHOFA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFA0, 0, 0
+}
+Sprite GHOFB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFB0, 0, 0
+}
+Sprite GHOFC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFC0, 0, 0
+}
+Sprite GHOFD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFD0, 0, 0
+}
+Sprite GHOFE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFE0, 0, 0
+}
+Sprite GHOFF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFF0, 0, 0
+}
+Sprite GHOFG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFG0, 0, 0
+}
+Sprite GHOFH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFH0, 0, 0
+}
+Sprite GHOFI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFI0, 0, 0
+}
+Sprite GHOFJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOFJ0, 0, 0
+}
+Sprite GHOGA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch GHOGA0, 0, 0
+}

@@ -9,6 +9,8 @@ Class RT_Ghost : Weapon {
         Weapon.AmmoUse2 9;
         Weapon.AmmoGive2 0;
         Weapon.SlotNumber 3;
+        Weapon.BobRangeX 0;
+        Weapon.BobRangeY 0;
         +Weapon.Ammo_Optional;
         +Weapon.NOALERT;
         Inventory.Pickupmessage "Picked up the Ghost!";
@@ -34,19 +36,82 @@ Class RT_Ghost : Weapon {
     States
     {
         Ready:
-            PUNG C 1 A_WeaponReady;
+            TNT1 A 0 A_WeaponReady;
+            GHOA A 1;
+            GHOA B 1;
+            GHOA C 1;
+            GHOA D 1;
+            GHOA E 1;
+            GHOA F 1;
+            GHOA G 1;
+            GHOA H 1;
+            GHOA I 1;
+            GHOA J 1;
+            GHOB A 1;
+            GHOB B 1;
+            GHOB C 1;
+            GHOB D 1;
+            GHOB E 1;
+            GHOB F 1;
+            GHOB G 1;
+            GHOB H 1;
+            GHOB I 1;
+            GHOB J 1;
+            GHOC A 1;
+            GHOC B 1;
+            GHOC C 1;
+            GHOC D 1;
+            GHOC E 1;
+            GHOC F 1;
+            GHOC G 1;
+            GHOC H 1;
+            GHOC I 1;
+            GHOC J 1;
+            GHOD A 1;
+            GHOD B 1;
+            GHOD C 1;
+            GHOD D 1;
+            GHOD E 1;
+            GHOD F 1;
+            GHOD G 1;
+            GHOD H 1;
+            GHOD I 1;
+            GHOD J 1;
+            GHOE A 1;
+            GHOE B 1;
+            GHOE C 1;
+            GHOE D 1;
+            GHOE E 1;
+            GHOE F 1;
+            GHOE G 1;
+            GHOE H 1;
+            GHOE I 1;
+            GHOE J 1;
+            GHOF A 1;
+            GHOF B 1;
+            GHOF C 1;
+            GHOF D 1;
+            GHOF E 1;
+            GHOF F 1;
+            GHOF G 1;
+            GHOF H 1;
+            GHOF I 1;
+            GHOF J 1;
+            GHOG A 1;
             Loop;
         Deselect:
-            PUNG C 1 A_Lower;
+            TNT1 A 0 A_Lower;
             TNT1 A 0 {
                 invoker.DisableGhost();
             }
+            GHOA A 1;
             Loop;
         Select:
-            PUNG C 1 A_Raise;
+            TNT1 A 0 A_Raise;
             TNT1 A 0 {
                 invoker.EnableGhost();
             }
+            GHOA A 1;
             Loop;
         Fire:
             Goto Ready;
