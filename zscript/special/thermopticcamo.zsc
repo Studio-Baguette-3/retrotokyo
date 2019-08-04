@@ -16,6 +16,7 @@ class RT_ThermopticCamo : Inventory
 		bool thermop_enabled = Cvar.GetCVar("rt_thermopticcamo", p).GetBool();
 
         if (thermop_enabled && !prev_thermop_enabled) {
+            A_PlayWeaponSound("weapons/ThermOn");
             owner.A_GiveInventory("PowerInvisibility");
             Actor a = owner.Spawn("RT_ThermopticCamoFlash");
             a.SetXYZ(owner.pos);
@@ -36,6 +37,7 @@ class RT_ThermopticCamo : Inventory
         thermop_enabled = Cvar.GetCvar("rt_thermopticcamo", p).GetBool();
 
         if (prev_thermop_enabled && !thermop_enabled) {
+            A_PlayWeaponSound("weapons/ThermOff");
             owner.A_TakeInventory("PowerInvisibility");
         }
 

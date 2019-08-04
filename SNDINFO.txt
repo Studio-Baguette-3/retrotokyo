@@ -13,3 +13,6 @@ weapons/MX5Relo MX5R
 
 weapons/DTPArm DTPA
 weapons/DTPExpl DTPX
+
+weapons/ThermOn THERMON
+weapons/ThermOff THERMOFF
