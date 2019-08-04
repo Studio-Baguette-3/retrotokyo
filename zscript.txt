@@ -12,6 +12,7 @@ version "3.5"
 
 #include "zscript/weapons/milso.zsc"
 #include "zscript/weapons/zr68c.zsc"
+#include "zscript/weapons/mx5.zsc"
 #include "zscript/weapons/smokegrenade.zsc"
 #include "zscript/weapons/detpack.zsc"
 #include "zscript/special/ghost.zsc"

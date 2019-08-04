@@ -1,11 +1,11 @@
 Class Support : Doomplayer
 {
     Default {
-        Player.startitem "Milso";
+        Player.startitem "MX5";
         Player.startitem "SmokeGrenadeHand";
         Player.startitem "SmokeGrenade", 5;
-        Player.startitem "MilsoAmmo", 5;
-        Player.startitem "MilsoAmmoLoaded", 12;
+        Player.startitem "MX5Ammo", 6;
+        Player.startitem "MX5AmmoLoaded", 30;
         Player.startitem "RT_Ghost";
         Player.DisplayName "Support";
         Player.ForwardMove 0.4, 0.2;

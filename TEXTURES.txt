@@ -17,6 +17,21 @@ Sprite ZR68A0, 455, 256 {
     Patch ZR68A0, 0, 0
 }
 
+//High res image:
+//Sprite MX50A0, 1920, 1080 {
+//    Offset 300, 150
+//    XScale 4
+//    YScale 5
+//    Patch MX50A0, 0, 0
+//}
+
+Sprite MX50A0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX51A0, 0, 0
+}
+
 // Spidertank images
 Sprite STNKA1, 1024, 768
 {

@@ -1,0 +1,112 @@
+Class MX5 : RT_Rifle
+{
+  Default {
+    Weapon.SelectionOrder 1900;
+    Weapon.AmmoType1 "MX5AmmoLoaded";
+    Weapon.AmmoType2 "MX5Ammo";
+    +Weapon.NoAlert;
+    Inventory.Pickupmessage "Picked up an MX-5.";
+    AttackSound "weapons/MX5Fire";
+  }
+
+  States
+  {
+    Ready:
+      MX50 A 1 A_WeaponReady(WRF_ALLOWRELOAD);
+      Loop;
+    Deselect:
+      MX50 A 1 A_Lower;
+      Loop;
+    Select:
+      MX50 A 1 A_Raise;
+      Loop;
+    NoAmmo:
+      MX50 A 20 A_PlayWeaponSound("weapons/MX5Empt");
+      Goto Ready;
+    Fire:
+      MX50 A 0 A_JumpIfNoAmmo("NoAmmo");
+      MX50 A 1 Offset(0, 30);
+      MX50 A 1 {
+        A_FireBullets(2,1.5,1,5,"BulletPuff",FBF_USEAMMO, 8192, "RTWeaponTracer", (invoker.height/2) - 1);
+      }
+      MX50 A 1 Offset(0, 32);
+      MX50 A 1 A_ReFire;
+      Goto Ready;
+    Flash:
+      MX50 A 3 Bright A_Light2;
+      MX50 A 3 Bright A_Light1;
+      MX50 A 0 Bright A_Light0;
+      Goto LightDone;
+    Spawn:
+      MX50 A -1;
+      Stop;
+    Reload:
+      MX50 A 0 A_JumpIfInventory("MX5AmmoLoaded", 30, 2);
+      MX50 A 0 A_JumpIfInventory("MX5Ammo", 1, "ReloadWork");
+      MX50 A 1;
+      Goto Ready;
+    ReloadWork:
+      MX50 A 1 Offset(0,35) A_PlayWeaponSound("weapons/MX5Relo");
+      MX50 A 1 Offset(0,38);
+      MX50 A 1 Offset(0,44);
+      MX50 A 1 Offset(0,52);
+      MX50 A 1 Offset(0,62);
+      MX50 A 1 Offset(0,72);
+      MX50 A 1 Offset(0,82);
+      TNT1 A 0 A_GiveInventory("MX5AmmoLoaded", 30);
+      TNT1 A 70 A_TakeInventory("MX5Ammo", 1);
+      MX50 A 1 Offset(0,82);
+      MX50 A 1 Offset(0,72);
+      MX50 A 1 Offset(0,62);
+      MX50 A 1 Offset(0,52);
+      MX50 A 1 Offset(0,44);
+      MX50 A 1 Offset(0,38);
+      MX50 A 1 Offset(0,35);
+      MX50 A 1 Offset(0,32);
+      Goto Ready;
+  }
+}
+
+Class MX5Ammo : Ammo replaces Clip
+{
+  Default {
+    Inventory.Amount 10;
+    Inventory.MaxAmount 150;
+    Ammo.BackpackAmount 10;
+    Ammo.BackpackMaxAmount 150;
+    Inventory.Icon "CLIPA0";
+    Inventory.PickupMessage "Picked up MX-5 ammo.";
+  }
+
+  States
+  {
+    Spawn:
+      CLIP A -1;
+      Stop;
+  }
+}
+
+Class MX5AmmoSmall : MX5Ammo
+{
+  Default {
+    Inventory.Amount 6;
+    Inventory.PickupMessage "Picked up some MX-5 ammo.";
+    Inventory.PickupSound "Beretta/Drop";
+    +DROPPED;
+  }
+
+  States
+  {
+    Spawn:
+      9MMP A -1;
+      Stop;
+  }
+}
+
+Class MX5AmmoLoaded : Ammo
+{
+  Default {
+    Inventory.MaxAmount 30;
+    +Inventory.IGNORESKILL;
+  }
+}
