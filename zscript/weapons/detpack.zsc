@@ -17,6 +17,25 @@ Class Detpack : Ammo
     }
 }
 
+Class DroppedDetpack : Ammo
+{
+    Default {
+        Inventory.PickupMessage "Got a (dropped) detpack!";
+        Inventory.Amount 0;
+        Inventory.MaxAmount 1;
+        Inventory.Icon "CLIPA0";
+        Ammo.BackpackAmount 0;
+        Ammo.BackpackMaxAmount 0;
+    }
+
+    States
+    {
+        Spawn:
+            CLIP A -1;
+            Stop;
+    }
+}
+
 Class DetpackFloor : Actor
 {
     Default {}
@@ -61,40 +80,170 @@ Class DetpackHand : Pistol
 {
     Default {
         Weapon.SlotNumber 2;
-        Weapon.AmmoType "Detpack";
-        Weapon.AmmoGive 1;
+        Weapon.AmmoType1 "Detpack";
+        Weapon.AmmoGive1 1;
+        Weapon.AmmoType2 "DroppedDetpack";
+        Weapon.AmmoGive2 0;
+        Weapon.AmmoUse1 1;
+        Weapon.AmmoUse2 1;
         +Weapon.NoAlert;
-        +Weapon.Ammo_Optional;
         +Weapon.NOALERT;
     }
 
     States
     {
         Ready:
-            PUNG A 1 A_WeaponReady;
+            TNT1 A 0 A_JumpIfNoAmmo("ReadyTrigger");
+            DTPA A 1 A_WeaponReady;
+            Loop;
+        ReadyTrigger:
+            DTTA A 1 A_WeaponReady;
             Loop;
         Deselect:
-            PUNG A 1 A_Lower;
+            TNT1 A 0 A_JumpIfNoAmmo("DeselectTrigger");
+            DTPA A 1 A_Lower;
+            Loop;
+        DeselectTrigger:
+            DTTA A 1 A_Lower;
             Loop;
         Select:
-            PUNG A 1 A_Raise;
+            TNT1 A 0 A_JumpIfNoAmmo("SelectTrigger");
+            DTPA A 1 A_Raise;
+            Loop;
+        SelectTrigger:
+            DTPT A 1 A_Raise;
             Loop;
         Fire:
-            PUNG A 1 A_JumpIfNoAmmo("NoAmmo");
-            PUNG B 1 A_FireCustomMissile("DetpackProjectile");
-            PUNG A 1 A_CheckReload;
-            PUNG A 1 A_Refire;
-            Goto Ready;
+            // drop detpack
+            TNT1 A 0 A_JumpIfNoAmmo("NoAmmo");
+            DTPA A 1;
+            DTPA B 1;
+            DTPA C 1;
+            DTPA D 1;
+            DTPA E 1;
+            DTPA F 1;
+            DTPA G 1;
+            DTPA H 1;
+            DTPA I 1;
+            DTPA J 1;
+            DTPB A 1;
+            DTPB B 1;
+            DTPB C 1;
+            DTPB D 1;
+            DTPB E 1;
+            DTPB F 1;
+            DTPB G 1;
+            DTPB H 1;
+            DTPB I 1;
+            DTPB J 1;
+            DTPC A 1;
+            DTPC B 1;
+            DTPC C 1;
+            DTPC D 1;
+            DTPC E 1;
+            DTPC F 1;
+            DTPC G 1;
+            DTPC H 1;
+            DTPC I 1;
+            DTPC J 1;
+            DTPD A 1;
+            DTPD B 1;
+            DTPD C 1;
+            DTPD D 1;
+            DTPD E 1;
+            DTPD F 1;
+            DTPD G 1;
+            DTPD H 1;
+            DTPD I 1;
+            DTPD J 1;
+            DTPE A 1;
+            DTPE B 1;
+            DTPE C 1;
+            DTPE D 1;
+            DTPE E 1;
+            DTPE F 1;
+            DTPE G 1;
+            DTPE H 1;
+            DTPE I 1;
+            DTPE J 1;
+            DTPF A 1;
+            DTPF B 1;
+            DTPF C 1;
+            DTPF D 1;
+            DTPF E 1;
+            DTPF F 1;
+            DTPF G 1;
+            DTPF H 1;
+            DTPF I 1;
+            DTPF J 1;
+            DTPG A 1;
+            DTPG B 1;
+            DTPG C 1;
+            DTPG D 1;
+            DTPG E 1;
+            DTPG F 1;
+            DTPG G 1;
+            DTPG H 1;
+            DTPG I 1;
+            DTPG J 1;
+            DTPH A 1;
+            DTPH B 1;
+            DTPH C 1;
+            DTPH D 1;
+            DTPH E 1 Offset(0,38);
+            DTPH F 1 Offset(0,44);
+            DTPH G 1 Offset(0,52);
+            DTPH H 1 Offset(0,62);
+            DTPH I 1 Offset(0,72);
+            DTPH J 1 Offset(0,82);
+            TNT1 A 5;
+            TNT1 A 0 A_TakeInventory("Detpack", 1);
+            TNT1 A 0 A_FireCustomMissile("DetpackProjectile", 0, false);
+            TNT1 A 0 A_GiveInventory("DroppedDetpack", 1);
+            Goto ReadyTrigger;
         NoAmmo:
-            Goto Ready;
+            TNT1 A 0;
+            Loop;
         AltFire:
-            PUNG A 1 {
+            DTTA A 1;
+            DTTA B 1;
+            DTTA C 1;
+            DTTA D 1;
+            DTTA E 1;
+            DTTA F 1;
+            DTTA G 1;
+            DTTA H 1;
+            DTTA I 1;
+            DTTA J 1;
+            DTTB A 1;
+            DTTB B 1;
+            DTTB C 1;
+            DTTB D 1;
+            DTTB E 1;
+            DTTB F 1;
+            DTTB G 1;
+            DTTB H 1;
+            DTTB I 1;
+            DTTB J 1;
+            DTTC A 1;
+            DTTC B 1;
+            DTTC C 1;
+            DTTC D 1;
+            TNT1 A 0 {
                 ThinkerIterator t = ThinkerIterator.Create("DetpackFloor");
                 DetpackFloor d;
                 while (d = DetpackFloor(t.Next())) {
                     d.SetState(d.ResolveState("Death"));
                 }
             }
-            Goto Ready;
+            TNT1 A 0 A_TakeInventory("DroppedDetpack", 1);
+            DTTC D 1 Offset(0,38);
+            DTTC D 1 Offset(0,44);
+            DTTC D 1 Offset(0,52);
+            DTTC D 1 Offset(0,62);
+            DTTC D 1 Offset(0,72);
+            DTTC D 1 Offset(0,82);
+            TNT1 A 0 A_CheckReload;
+            Goto DeselectTrigger;
     }
 }

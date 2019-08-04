@@ -1890,3 +1890,629 @@ Sprite MILGC0, 640, 360 {
     YScale 1.8
     Patch MILGC0, 0, 0
 }
+
+
+Sprite DTTAA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAA0, 0, 0
+}
+Sprite DTTAB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAB0, 0, 0
+}
+Sprite DTTAC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAC0, 0, 0
+}
+Sprite DTTAD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAD0, 0, 0
+}
+Sprite DTTAE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAE0, 0, 0
+}
+Sprite DTTAF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAF0, 0, 0
+}
+Sprite DTTAG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAG0, 0, 0
+}
+Sprite DTTAH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAH0, 0, 0
+}
+Sprite DTTAI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAI0, 0, 0
+}
+Sprite DTTAJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTAJ0, 0, 0
+}
+Sprite DTTBA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBA0, 0, 0
+}
+Sprite DTTBB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBB0, 0, 0
+}
+Sprite DTTBC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBC0, 0, 0
+}
+Sprite DTTBD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBD0, 0, 0
+}
+Sprite DTTBE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBE0, 0, 0
+}
+Sprite DTTBF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBF0, 0, 0
+}
+Sprite DTTBG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBG0, 0, 0
+}
+Sprite DTTBH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBH0, 0, 0
+}
+Sprite DTTBI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBI0, 0, 0
+}
+Sprite DTTBJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTBJ0, 0, 0
+}
+Sprite DTTCA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTCA0, 0, 0
+}
+Sprite DTTCB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTCB0, 0, 0
+}
+Sprite DTTCC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTCC0, 0, 0
+}
+Sprite DTTCD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTTCD0, 0, 0
+}
+Sprite DTPAA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAA0, 0, 0
+}
+Sprite DTPAB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAB0, 0, 0
+}
+Sprite DTPAC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAC0, 0, 0
+}
+Sprite DTPAD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAD0, 0, 0
+}
+Sprite DTPAE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAE0, 0, 0
+}
+Sprite DTPAF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAF0, 0, 0
+}
+Sprite DTPAG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAG0, 0, 0
+}
+Sprite DTPAH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAH0, 0, 0
+}
+Sprite DTPAI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAI0, 0, 0
+}
+Sprite DTPAJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPAJ0, 0, 0
+}
+Sprite DTPBA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBA0, 0, 0
+}
+Sprite DTPBB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBB0, 0, 0
+}
+Sprite DTPBC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBC0, 0, 0
+}
+Sprite DTPBD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBD0, 0, 0
+}
+Sprite DTPBE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBE0, 0, 0
+}
+Sprite DTPBF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBF0, 0, 0
+}
+Sprite DTPBG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBG0, 0, 0
+}
+Sprite DTPBH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBH0, 0, 0
+}
+Sprite DTPBI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBI0, 0, 0
+}
+Sprite DTPBJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPBJ0, 0, 0
+}
+Sprite DTPCA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCA0, 0, 0
+}
+Sprite DTPCB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCB0, 0, 0
+}
+Sprite DTPCC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCC0, 0, 0
+}
+Sprite DTPCD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCD0, 0, 0
+}
+Sprite DTPCE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCE0, 0, 0
+}
+Sprite DTPCF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCF0, 0, 0
+}
+Sprite DTPCG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCG0, 0, 0
+}
+Sprite DTPCH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCH0, 0, 0
+}
+Sprite DTPCI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCI0, 0, 0
+}
+Sprite DTPCJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPCJ0, 0, 0
+}
+Sprite DTPDA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDA0, 0, 0
+}
+Sprite DTPDB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDB0, 0, 0
+}
+Sprite DTPDC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDC0, 0, 0
+}
+Sprite DTPDD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDD0, 0, 0
+}
+Sprite DTPDE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDE0, 0, 0
+}
+Sprite DTPDF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDF0, 0, 0
+}
+Sprite DTPDG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDG0, 0, 0
+}
+Sprite DTPDH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDH0, 0, 0
+}
+Sprite DTPDI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDI0, 0, 0
+}
+Sprite DTPDJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPDJ0, 0, 0
+}
+Sprite DTPEA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEA0, 0, 0
+}
+Sprite DTPEB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEB0, 0, 0
+}
+Sprite DTPEC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEC0, 0, 0
+}
+Sprite DTPED0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPED0, 0, 0
+}
+Sprite DTPEE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEE0, 0, 0
+}
+Sprite DTPEF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEF0, 0, 0
+}
+Sprite DTPEG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEG0, 0, 0
+}
+Sprite DTPEH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEH0, 0, 0
+}
+Sprite DTPEI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEI0, 0, 0
+}
+Sprite DTPEJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPEJ0, 0, 0
+}
+Sprite DTPFA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFA0, 0, 0
+}
+Sprite DTPFB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFB0, 0, 0
+}
+Sprite DTPFC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFC0, 0, 0
+}
+Sprite DTPFD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFD0, 0, 0
+}
+Sprite DTPFE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFE0, 0, 0
+}
+Sprite DTPFF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFF0, 0, 0
+}
+Sprite DTPFG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFG0, 0, 0
+}
+Sprite DTPFH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFH0, 0, 0
+}
+Sprite DTPFI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFI0, 0, 0
+}
+Sprite DTPFJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPFJ0, 0, 0
+}
+Sprite DTPGA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGA0, 0, 0
+}
+Sprite DTPGB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGB0, 0, 0
+}
+Sprite DTPGC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGC0, 0, 0
+}
+Sprite DTPGD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGD0, 0, 0
+}
+Sprite DTPGE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGE0, 0, 0
+}
+Sprite DTPGF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGF0, 0, 0
+}
+Sprite DTPGG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGG0, 0, 0
+}
+Sprite DTPGH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGH0, 0, 0
+}
+Sprite DTPGI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGI0, 0, 0
+}
+Sprite DTPGJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPGJ0, 0, 0
+}
+Sprite DTPHA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHA0, 0, 0
+}
+Sprite DTPHB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHB0, 0, 0
+}
+Sprite DTPHC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHC0, 0, 0
+}
+Sprite DTPHD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHD0, 0, 0
+}
+Sprite DTPHE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHE0, 0, 0
+}
+Sprite DTPHF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHF0, 0, 0
+}
+Sprite DTPHG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHG0, 0, 0
+}
+Sprite DTPHH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHH0, 0, 0
+}
+Sprite DTPHI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHI0, 0, 0
+}
+Sprite DTPHJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch DTPHJ0, 0, 0
+}
