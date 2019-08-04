@@ -6,6 +6,7 @@ Class Milso : RT_Pistol
     Weapon.AmmoType2 "MilsoAmmo";
     +Weapon.NoAlert;
     Inventory.Pickupmessage "Picked up a Milso.";
+    Weapon.SelectionOrder 8000;
     AttackSound "weapons/MilsoFire";
   }
 

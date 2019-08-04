@@ -13,6 +13,7 @@ Class RT_Ghost : Weapon {
         Weapon.BobRangeY 0;
         +Weapon.Ammo_Optional;
         +Weapon.NOALERT;
+        Weapon.SelectionOrder 9000;
         Inventory.Pickupmessage "Picked up the Ghost!";
     }
 

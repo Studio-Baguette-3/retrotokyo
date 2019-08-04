@@ -7,6 +7,7 @@ Class MX5 : RT_Rifle
     +Weapon.NoAlert;
     Inventory.Pickupmessage "Picked up an MX-5.";
     AttackSound "weapons/MX5Fire";
+    Weapon.SelectionOrder 6500;
   }
 
   States

@@ -7,6 +7,7 @@ Class SmokeGrenade : Ammo
     Inventory.Icon "CLIPA0";
     Ammo.BackpackAmount 2;
     Ammo.BackpackMaxAmount 4;
+    Weapon.SelectionOrder 8500;
   }
 
   States

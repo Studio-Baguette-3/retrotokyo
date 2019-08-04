@@ -87,6 +87,7 @@ Class DetpackHand : Pistol
         Weapon.AmmoGive2 0;
         Weapon.AmmoUse1 1;
         Weapon.AmmoUse2 1;
+        Weapon.SelectionOrder 8500;
         +Weapon.NoAlert;
         +Weapon.NOALERT;
     }
