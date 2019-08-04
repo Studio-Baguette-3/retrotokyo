@@ -27,7 +27,9 @@ class SpiderTankRT: Actor replaces SpiderMastermind {
 
     States {
         Spawn:
-            STNK A 10 A_Look;
+            Goto Idle;
+        Idle:
+            STNK A 10;
             Loop;
         See:
             STNK A 3 A_Metal;
@@ -47,7 +49,11 @@ class SpiderTankRT: Actor replaces SpiderMastermind {
         Missile:
             STNK A 20 Bright;
             STNK A 0 Bright { // G
-                A_FaceTarget();
+                if (!target.CheckInventory("PowerInvisibility", 1)) {
+                    A_FaceTarget();
+                } else {
+                    // A_LOG("Can't see you!");
+                }
                 strafe_fire_i -= 3;
                 if (strafe_fire_i < -30) {
                     strafe_fire_i = 30;

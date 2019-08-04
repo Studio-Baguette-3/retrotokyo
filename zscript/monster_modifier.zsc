@@ -23,7 +23,8 @@ class RT_MonsterModifier : EventHandler {
 		}
 
 		if(e.Thing.CheckClass('ShotgunGuy', AAPTR_DEFAULT, true) || 
-			e.Thing.CheckClass('ZombieMan', AAPTR_DEFAULT, true)) {
+			e.Thing.CheckClass('ZombieMan', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('SpiderTankRT', AAPTR_DEFAULT, true)) {
 			e.Thing.GiveInventory('RT_Monster_AIHelper', 1); // custom AI
 		}
 	}
