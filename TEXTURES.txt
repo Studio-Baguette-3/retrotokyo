@@ -12,6 +12,13 @@ Graphic XHAIRB1, 128, 128 {
     Patch XHAIRB1, 0, 0
 }
 
+Graphic M_DOOM, 270, 180 {
+    XScale 3
+    YScale 3
+    Offset -40, 0
+    Patch M_DOOM, 0, 0
+}
+
 
 Sprite MX5AA0, 640, 360 {
     Offset 50, 30
