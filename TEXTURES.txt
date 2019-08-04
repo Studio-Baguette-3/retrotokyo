@@ -12,10 +12,6 @@ Graphic XHAIRB1, 128, 128 {
     Patch XHAIRB1, 0, 0
 }
 
-Sprite ZR68A0, 455, 256 {
-    Offset 64, 64
-    Patch ZR68A0, 0, 0
-}
 
 Sprite MX5AA0, 640, 360 {
     Offset 50, 30
@@ -1018,4 +1014,492 @@ Sprite GHOGA0, 640, 360 {
     XScale 1.5
     YScale 1.8
     Patch GHOGA0, 0, 0
+}
+
+
+Sprite ZRCAA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAA0, 0, 0
+}
+Sprite ZRCAB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAB0, 0, 0
+}
+Sprite ZRCAC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAC0, 0, 0
+}
+Sprite ZRCAD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAD0, 0, 0
+}
+Sprite ZRCAE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAE0, 0, 0
+}
+Sprite ZRCAF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAF0, 0, 0
+}
+Sprite ZRCAG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAG0, 0, 0
+}
+Sprite ZRCAH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAH0, 0, 0
+}
+Sprite ZRCAI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAI0, 0, 0
+}
+Sprite ZRCAJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCAJ0, 0, 0
+}
+Sprite ZRCBA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBA0, 0, 0
+}
+Sprite ZRCBB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBB0, 0, 0
+}
+Sprite ZRCBC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBC0, 0, 0
+}
+Sprite ZRCBD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBD0, 0, 0
+}
+Sprite ZRCBE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBE0, 0, 0
+}
+Sprite ZRCBF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBF0, 0, 0
+}
+Sprite ZRCBG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBG0, 0, 0
+}
+Sprite ZRCBH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBH0, 0, 0
+}
+Sprite ZRCBI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBI0, 0, 0
+}
+Sprite ZRCBJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCBJ0, 0, 0
+}
+Sprite ZRCCA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCA0, 0, 0
+}
+Sprite ZRCCB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCB0, 0, 0
+}
+Sprite ZRCCC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCC0, 0, 0
+}
+Sprite ZRCCD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCD0, 0, 0
+}
+Sprite ZRCCE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCE0, 0, 0
+}
+Sprite ZRCCF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCF0, 0, 0
+}
+Sprite ZRCCG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCG0, 0, 0
+}
+Sprite ZRCCH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCH0, 0, 0
+}
+Sprite ZRCCI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCI0, 0, 0
+}
+Sprite ZRCCJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCCJ0, 0, 0
+}
+Sprite ZRCDA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDA0, 0, 0
+}
+Sprite ZRCDB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDB0, 0, 0
+}
+Sprite ZRCDC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDC0, 0, 0
+}
+Sprite ZRCDD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDD0, 0, 0
+}
+Sprite ZRCDE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDE0, 0, 0
+}
+Sprite ZRCDF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDF0, 0, 0
+}
+Sprite ZRCDG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDG0, 0, 0
+}
+Sprite ZRCDH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDH0, 0, 0
+}
+Sprite ZRCDI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDI0, 0, 0
+}
+Sprite ZRCDJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCDJ0, 0, 0
+}
+Sprite ZRCEA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEA0, 0, 0
+}
+Sprite ZRCEB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEB0, 0, 0
+}
+Sprite ZRCEC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEC0, 0, 0
+}
+Sprite ZRCED0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCED0, 0, 0
+}
+Sprite ZRCEE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEE0, 0, 0
+}
+Sprite ZRCEF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEF0, 0, 0
+}
+Sprite ZRCEG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEG0, 0, 0
+}
+Sprite ZRCEH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEH0, 0, 0
+}
+Sprite ZRCEI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEI0, 0, 0
+}
+Sprite ZRCEJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCEJ0, 0, 0
+}
+Sprite ZRCFA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFA0, 0, 0
+}
+Sprite ZRCFB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFB0, 0, 0
+}
+Sprite ZRCFC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFC0, 0, 0
+}
+Sprite ZRCFD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFD0, 0, 0
+}
+Sprite ZRCFE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFE0, 0, 0
+}
+Sprite ZRCFF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFF0, 0, 0
+}
+Sprite ZRCFG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFG0, 0, 0
+}
+Sprite ZRCFH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFH0, 0, 0
+}
+Sprite ZRCFI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFI0, 0, 0
+}
+Sprite ZRCFJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCFJ0, 0, 0
+}
+Sprite ZRCGA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGA0, 0, 0
+}
+Sprite ZRCGB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGB0, 0, 0
+}
+Sprite ZRCGC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGC0, 0, 0
+}
+Sprite ZRCGD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGD0, 0, 0
+}
+Sprite ZRCGE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGE0, 0, 0
+}
+Sprite ZRCGF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGF0, 0, 0
+}
+Sprite ZRCGG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGG0, 0, 0
+}
+Sprite ZRCGH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGH0, 0, 0
+}
+Sprite ZRCGI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGI0, 0, 0
+}
+Sprite ZRCGJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCGJ0, 0, 0
+}
+Sprite ZRCHA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHA0, 0, 0
+}
+Sprite ZRCHB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHB0, 0, 0
+}
+Sprite ZRCHC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHC0, 0, 0
+}
+Sprite ZRCHD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHD0, 0, 0
+}
+Sprite ZRCHE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHE0, 0, 0
+}
+Sprite ZRCHF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHF0, 0, 0
+}
+Sprite ZRCHG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHG0, 0, 0
+}
+Sprite ZRCHH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHH0, 0, 0
+}
+Sprite ZRCHI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHI0, 0, 0
+}
+Sprite ZRCHJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCHJ0, 0, 0
+}
+Sprite ZRCIA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch ZRCIA0, 0, 0
 }
