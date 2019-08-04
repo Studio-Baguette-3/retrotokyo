@@ -41,14 +41,14 @@ Class DetpackFloor : Actor
     Default {}
     States {
         Spawn:
-            CLIP A 1 nodelay Thing_ChangeTid(0, 4261);
+            CLIP A 1 nodelay;
             Goto Idle;
         Idle:
             CLIP A -1;
             Loop;
         Death:
             MISL B 8 BRIGHT {
-                A_Explode(100, 128);
+                A_Explode(1000, 200, XF_EXPLICITDAMAGETYPE, false, 128);
             }
             Stop;
     }
@@ -64,6 +64,7 @@ Class DetpackProjectile : Grenade
         BounceType "Hexen";
         BounceCount 3;
         Friction 5;
+        Damage 0;
     }
 
     States
