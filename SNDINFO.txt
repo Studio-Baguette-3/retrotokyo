@@ -7,5 +7,6 @@ weapons/ZR68CEmpt ZR68E
 weapons/ZR68CRelo ZR68R
 
 weapons/MX5Fire MX5F
+$volume weapons/MX5Fire 0.4
 weapons/MX5Empt MX5E
 weapons/MX5Relo MX5R
