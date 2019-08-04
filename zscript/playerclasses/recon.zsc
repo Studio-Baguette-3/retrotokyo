@@ -8,6 +8,9 @@ Class Recon : Doomplayer
         Player.startitem "MilsoAmmoLoaded", 12;
         Player.startitem "RT_Ghost";
         Player.startitem "RT_ThermopticCamo_Recon", 1;
+        Player.startitem "ZR68C";
+        Player.startitem "ZR68CAmmo", 5;
+        Player.startitem "ZR68CAmmoLoaded", 30;
         Player.DisplayName "Recon";
         Player.ForwardMove 1, 1;
         Player.SideMove 1, 1;
