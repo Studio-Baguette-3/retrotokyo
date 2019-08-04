@@ -116,6 +116,7 @@ Class DetpackHand : Pistol
         Fire:
             // drop detpack
             TNT1 A 0 A_JumpIfNoAmmo("NoAmmo");
+            TNT1 A 0 A_PlayWeaponSound("weapons/DTPArm");
             DTPA A 1;
             DTPA B 1;
             DTPA C 1;
