@@ -1,14 +1,23 @@
-class SpiderTankRT: SpiderMastermind replaces SpiderMastermind {
+class SpiderTankRT: Actor replaces SpiderMastermind {
     float strafe_fire_i;
     Default {
+        Monster;
         +NOINFIGHTING;
-        Translation "112:119=200:207", "120:127=240:247";
         SeeSound "";
         AttackSound "grunt/attack";
-        PainSound "player/male/pain50_1";
-        DeathSound "player/male/death2";
+        PainSound "";
+        DeathSound "";
         ActiveSound "";
         Speed 0;
+        Health 1250;
+        Radius 128;
+        Height 100;
+        Mass 1000;
+        PainChance 256;
+        MinMissileChance 160;
+        +DONTMORPH;
+        Obituary "%o was destroyed by a Spider Tank.";
+        Tag "Spider Tank";
     }
 
     override void PostBeginPlay()
