@@ -70,11 +70,11 @@ class SpiderTankRT: Actor replaces SpiderMastermind {
             STNK A 3 A_Pain; // I
             Goto See;
         Death:
-            STNK A 20 A_Scream; // J
-            STNK A 10 A_NoBlocking; // K
-            STNK AAAAAAA 10; // LMNOPQR
-            STNK A 30; // S
-            STNK A -1 A_BossDeath; // S
+            STNK A 1 A_Scream; // J
+            STNK A 1 A_NoBlocking; // K
+            STNK AAAAAAA 1; // LMNOPQR
+            STNK A 1; // S
+            TNT1 A -1 A_BossDeath; // S
             Stop;
     }
 }
