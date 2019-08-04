@@ -1503,3 +1503,383 @@ Sprite ZRCIA0, 640, 360 {
     YScale 1.8
     Patch ZRCIA0, 0, 0
 }
+
+
+Sprite MILAA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAA0, 0, 0
+}
+Sprite MILAB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAB0, 0, 0
+}
+Sprite MILAC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAC0, 0, 0
+}
+Sprite MILAD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAD0, 0, 0
+}
+Sprite MILAE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAE0, 0, 0
+}
+Sprite MILAF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAF0, 0, 0
+}
+Sprite MILAG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAG0, 0, 0
+}
+Sprite MILAH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAH0, 0, 0
+}
+Sprite MILAI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAI0, 0, 0
+}
+Sprite MILAJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILAJ0, 0, 0
+}
+Sprite MILBA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBA0, 0, 0
+}
+Sprite MILBB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBB0, 0, 0
+}
+Sprite MILBC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBC0, 0, 0
+}
+Sprite MILBD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBD0, 0, 0
+}
+Sprite MILBE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBE0, 0, 0
+}
+Sprite MILBF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBF0, 0, 0
+}
+Sprite MILBG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBG0, 0, 0
+}
+Sprite MILBH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBH0, 0, 0
+}
+Sprite MILBI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBI0, 0, 0
+}
+Sprite MILBJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILBJ0, 0, 0
+}
+Sprite MILCA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCA0, 0, 0
+}
+Sprite MILCB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCB0, 0, 0
+}
+Sprite MILCC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCC0, 0, 0
+}
+Sprite MILCD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCD0, 0, 0
+}
+Sprite MILCE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCE0, 0, 0
+}
+Sprite MILCF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCF0, 0, 0
+}
+Sprite MILCG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCG0, 0, 0
+}
+Sprite MILCH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCH0, 0, 0
+}
+Sprite MILCI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCI0, 0, 0
+}
+Sprite MILCJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILCJ0, 0, 0
+}
+Sprite MILDA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDA0, 0, 0
+}
+Sprite MILDB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDB0, 0, 0
+}
+Sprite MILDC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDC0, 0, 0
+}
+Sprite MILDD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDD0, 0, 0
+}
+Sprite MILDE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDE0, 0, 0
+}
+Sprite MILDF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDF0, 0, 0
+}
+Sprite MILDG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDG0, 0, 0
+}
+Sprite MILDH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDH0, 0, 0
+}
+Sprite MILDI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDI0, 0, 0
+}
+Sprite MILDJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILDJ0, 0, 0
+}
+Sprite MILEA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEA0, 0, 0
+}
+Sprite MILEB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEB0, 0, 0
+}
+Sprite MILEC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEC0, 0, 0
+}
+Sprite MILED0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILED0, 0, 0
+}
+Sprite MILEE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEE0, 0, 0
+}
+Sprite MILEF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEF0, 0, 0
+}
+Sprite MILEG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEG0, 0, 0
+}
+Sprite MILEH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEH0, 0, 0
+}
+Sprite MILEI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEI0, 0, 0
+}
+Sprite MILEJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILEJ0, 0, 0
+}
+Sprite MILFA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFA0, 0, 0
+}
+Sprite MILFB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFB0, 0, 0
+}
+Sprite MILFC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFC0, 0, 0
+}
+Sprite MILFD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFD0, 0, 0
+}
+Sprite MILFE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFE0, 0, 0
+}
+Sprite MILFF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFF0, 0, 0
+}
+Sprite MILFG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFG0, 0, 0
+}
+Sprite MILFH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFH0, 0, 0
+}
+Sprite MILFI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFI0, 0, 0
+}
+Sprite MILFJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILFJ0, 0, 0
+}
+Sprite MILGA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILGA0, 0, 0
+}
+Sprite MILGB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILGB0, 0, 0
+}
+Sprite MILGC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MILGC0, 0, 0
+}

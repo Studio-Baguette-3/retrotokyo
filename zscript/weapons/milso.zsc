@@ -12,55 +12,104 @@ Class Milso : RT_Pistol
   States
   {
     Ready:
-      MILS A 1 A_WeaponReady(WRF_ALLOWRELOAD);
+      MILA A 1 A_WeaponReady(WRF_ALLOWRELOAD);
       Loop;
     Deselect:
-      MILS A 1 A_Lower;
+      MILA A 1 A_Lower;
       Loop;
     Select:
-      MILS A 1 A_Raise;
+      MILA A 1 A_Raise;
       Loop;
     NoAmmo:
-      MILS A 20 A_PlayWeaponSound("weapons/MilsoEmpt");
+      MILA A 20 A_PlayWeaponSound("weapons/MilsoEmpt");
       Goto Ready;
     Fire:
-      MILS A 0 A_JumpIfNoAmmo("NoAmmo");
-      MILS A 4 Offset(0, 30);
-      MILS A 6 A_FireBullets(2,1.5,1,6,"BulletPuff",1);
-      MILS A 4 Offset(0, 32);
-      MILS A 5 A_ReFire;
+      MILA A 0 A_JumpIfNoAmmo("NoAmmo");
+      MILA A 4 Offset(0, 30);
+      MILA A 6 A_FireBullets(2,1.5,1,6,"BulletPuff",1);
+      MILA A 4 Offset(0, 32);
+      MILA A 5 A_ReFire;
       Goto Ready;
     Flash:
-      MILS A 3 Bright A_Light2;
-      MILS A 3 Bright A_Light1;
-      MILS A 0 Bright A_Light0;
+      MILA A 3 Bright A_Light2;
+      MILA A 3 Bright A_Light1;
+      MILA A 0 Bright A_Light0;
       Goto LightDone;
     Spawn:
-      MILS A -1;
+      MILA A -1;
       Stop;
     Reload:
-      MILS A 0 A_JumpIfInventory("MilsoAmmoLoaded", 12, 2);
-      MILS A 0 A_JumpIfInventory("MilsoAmmo", 1, "ReloadWork");
-      MILS A 1;
+      MILA A 0 A_JumpIfInventory("MilsoAmmoLoaded", 12, 2);
+      MILA A 0 A_JumpIfInventory("MilsoAmmo", 1, "ReloadWork");
+      MILA A 1;
       Goto Ready;
     ReloadWork:
-      MILS A 1 Offset(0,35) A_PlayWeaponSound("weapons/MilsoRelo");
-      MILS A 1 Offset(0,38);
-      MILS A 1 Offset(0,44);
-      MILS A 1 Offset(0,52);
-      MILS A 1 Offset(0,62);
-      MILS A 1 Offset(0,72);
-      MILS A 1 Offset(0,82);
+      TNT1 A 0 Offset(0,35) A_PlayWeaponSound("weapons/MilsoRelo");
+      MILA A 1;
+      MILA B 1;
+      MILA C 1;
+      MILA D 1;
+      MILA E 1;
+      MILA F 1;
+      MILA G 1;
+      MILA H 1;
+      MILA I 1;
+      MILA J 1;
+      MILB A 1;
+      MILB B 1;
+      MILB C 1;
+      MILB D 1;
+      MILB E 1;
+      MILB F 1;
+      MILB G 1;
+      MILB H 1;
+      MILB I 1;
+      MILB J 1;
+      MILC A 1;
+      MILC B 1;
+      MILC C 1;
+      MILC D 1;
+      MILC E 1;
+      MILC F 1;
+      MILC G 1;
+      MILC H 1;
+      MILC I 1;
+      MILC J 1;
+      MILD A 1;
+      MILD B 1;
+      MILD C 1;
+      MILD D 1;
+      MILD E 1;
+      MILD F 1;
+      MILD G 1;
+      MILD H 1;
+      MILD I 1;
+      MILD J 1;
+      MILE A 1;
+      MILE B 1;
+      MILE C 1;
+      MILE D 1;
+      MILE E 1;
+      MILE F 1;
+      MILE G 1;
+      MILE H 1;
+      MILE I 1;
+      MILE J 1;
+      MILF A 1;
+      MILF B 1;
+      MILF C 1;
+      MILF D 1;
+      MILF E 1;
+      MILF F 1;
+      MILF G 1;
+      MILF H 1;
+      MILF I 1;
+      MILF J 1;
+      MILG A 1;
+      MILG B 1;
+      MILG C 1;
       TNT1 A 0 A_GiveInventory("MilsoAmmoLoaded", 12);
-      TNT1 A 40 A_TakeInventory("MilsoAmmo", 1);
-      MILS A 1 Offset(0,82);
-      MILS A 1 Offset(0,72);
-      MILS A 1 Offset(0,62);
-      MILS A 1 Offset(0,52);
-      MILS A 1 Offset(0,44);
-      MILS A 1 Offset(0,38);
-      MILS A 1 Offset(0,35);
-      MILS A 1 Offset(0,32);
+      TNT1 A 0 A_TakeInventory("MilsoAmmo", 1);
       Goto Ready;
   }
 }
