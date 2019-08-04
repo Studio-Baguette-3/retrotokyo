@@ -17,20 +17,524 @@ Sprite ZR68A0, 455, 256 {
     Patch ZR68A0, 0, 0
 }
 
-//High res image:
-//Sprite MX50A0, 1920, 1080 {
-//    Offset 300, 150
-//    XScale 4
-//    YScale 5
-//    Patch MX50A0, 0, 0
-//}
-
-Sprite MX50A0, 640, 360 {
+Sprite MX5AA0, 640, 360 {
     Offset 50, 30
     XScale 1.5
     YScale 1.8
-    Patch MX51A0, 0, 0
+    Patch MX5AA0, 0, 0
 }
+Sprite MX5AB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AB0, 0, 0
+}
+Sprite MX5AC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AC0, 0, 0
+}
+Sprite MX5AD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AD0, 0, 0
+}
+Sprite MX5AE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AE0, 0, 0
+}
+Sprite MX5AF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AF0, 0, 0
+}
+Sprite MX5AG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AG0, 0, 0
+}
+Sprite MX5AH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AH0, 0, 0
+}
+Sprite MX5AI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AI0, 0, 0
+}
+Sprite MX5AJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5AJ0, 0, 0
+}
+Sprite MX5BA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BA0, 0, 0
+}
+Sprite MX5BB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BB0, 0, 0
+}
+Sprite MX5BC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BC0, 0, 0
+}
+Sprite MX5BD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BD0, 0, 0
+}
+Sprite MX5BE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BE0, 0, 0
+}
+Sprite MX5BF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BF0, 0, 0
+}
+Sprite MX5BG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BG0, 0, 0
+}
+Sprite MX5BH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BH0, 0, 0
+}
+Sprite MX5BI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BI0, 0, 0
+}
+Sprite MX5BJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5BJ0, 0, 0
+}
+Sprite MX5CA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CA0, 0, 0
+}
+Sprite MX5CB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CB0, 0, 0
+}
+Sprite MX5CC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CC0, 0, 0
+}
+Sprite MX5CD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CD0, 0, 0
+}
+Sprite MX5CE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CE0, 0, 0
+}
+Sprite MX5CF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CF0, 0, 0
+}
+Sprite MX5CG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CG0, 0, 0
+}
+Sprite MX5CH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CH0, 0, 0
+}
+Sprite MX5CI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CI0, 0, 0
+}
+Sprite MX5CJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5CJ0, 0, 0
+}
+Sprite MX5DA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DA0, 0, 0
+}
+Sprite MX5DB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DB0, 0, 0
+}
+Sprite MX5DC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DC0, 0, 0
+}
+Sprite MX5DD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DD0, 0, 0
+}
+Sprite MX5DE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DE0, 0, 0
+}
+Sprite MX5DF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DF0, 0, 0
+}
+Sprite MX5DG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DG0, 0, 0
+}
+Sprite MX5DH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DH0, 0, 0
+}
+Sprite MX5DI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DI0, 0, 0
+}
+Sprite MX5DJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5DJ0, 0, 0
+}
+Sprite MX5EA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EA0, 0, 0
+}
+Sprite MX5EB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EB0, 0, 0
+}
+Sprite MX5EC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EC0, 0, 0
+}
+Sprite MX5ED0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5ED0, 0, 0
+}
+Sprite MX5EE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EE0, 0, 0
+}
+Sprite MX5EF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EF0, 0, 0
+}
+Sprite MX5EG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EG0, 0, 0
+}
+Sprite MX5EH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EH0, 0, 0
+}
+Sprite MX5EI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EI0, 0, 0
+}
+Sprite MX5EJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5EJ0, 0, 0
+}
+Sprite MX5FA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FA0, 0, 0
+}
+Sprite MX5FB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FB0, 0, 0
+}
+Sprite MX5FC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FC0, 0, 0
+}
+Sprite MX5FD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FD0, 0, 0
+}
+Sprite MX5FE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FE0, 0, 0
+}
+Sprite MX5FF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FF0, 0, 0
+}
+Sprite MX5FG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FG0, 0, 0
+}
+Sprite MX5FH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FH0, 0, 0
+}
+Sprite MX5FI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FI0, 0, 0
+}
+Sprite MX5FJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5FJ0, 0, 0
+}
+Sprite MX5GA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GA0, 0, 0
+}
+Sprite MX5GB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GB0, 0, 0
+}
+Sprite MX5GC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GC0, 0, 0
+}
+Sprite MX5GD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GD0, 0, 0
+}
+Sprite MX5GE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GE0, 0, 0
+}
+Sprite MX5GF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GF0, 0, 0
+}
+Sprite MX5GG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GG0, 0, 0
+}
+Sprite MX5GH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GH0, 0, 0
+}
+Sprite MX5GI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GI0, 0, 0
+}
+Sprite MX5GJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5GJ0, 0, 0
+}
+Sprite MX5HA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HA0, 0, 0
+}
+Sprite MX5HB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HB0, 0, 0
+}
+Sprite MX5HC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HC0, 0, 0
+}
+Sprite MX5HD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HD0, 0, 0
+}
+Sprite MX5HE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HE0, 0, 0
+}
+Sprite MX5HF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HF0, 0, 0
+}
+Sprite MX5HG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HG0, 0, 0
+}
+Sprite MX5HH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HH0, 0, 0
+}
+Sprite MX5HI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HI0, 0, 0
+}
+Sprite MX5HJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5HJ0, 0, 0
+}
+Sprite MX5IA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5IA0, 0, 0
+}
+Sprite MX5IB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5IB0, 0, 0
+}
+Sprite MX5IC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5IC0, 0, 0
+}
+Sprite MX5ID0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5ID0, 0, 0
+}
+Sprite MX5IE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5IE0, 0, 0
+}
+Sprite MX5IF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MX5IF0, 0, 0
+}
+
+
 
 // Spidertank images
 Sprite STNKA1, 1024, 768
