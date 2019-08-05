@@ -1,4 +1,4 @@
-Class SUPA7 : RT_Rifle
+Class SUPA7 : RT_Rifle replaces Shotgun
 {
   Default {
     Weapon.SelectionOrder 1900;
