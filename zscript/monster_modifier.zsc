@@ -18,6 +18,7 @@ class RT_MonsterModifier : EventHandler {
 			e.Thing.CheckClass('ShotgunGuy', AAPTR_DEFAULT, true) || 
 			e.Thing.CheckClass('SpiderMastermind', AAPTR_DEFAULT, true) || 
 			e.Thing.CheckClass('WolfensteinSS', AAPTR_DEFAULT, true) || 
+			e.Thing.CheckClass('SpiderTankRT', AAPTR_DEFAULT, true) || 
 			e.Thing.CheckClass('ZombieMan', AAPTR_DEFAULT, true)) {
 			e.Thing.GiveInventory('RT_MonsterVisionModes_Updater', 1); // update vision modes
 		}
