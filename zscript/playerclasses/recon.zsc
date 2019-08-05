@@ -8,6 +8,9 @@ Class Recon : Doomplayer
         Player.startitem "MilsoAmmoLoaded", 12;
         Player.startitem "RT_Ghost";
         Player.startitem "RT_ThermopticCamo_Recon", 1;
+        Player.startitem "JitteS";
+        Player.startitem "JitteSAmmo", 5;
+        Player.startitem "JitteSAmmoLoaded", 30;
         Player.startitem "MPN";
         Player.startitem "MPNAmmo", 5;
         Player.startitem "MPNAmmoLoaded", 30;

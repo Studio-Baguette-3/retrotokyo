@@ -1,0 +1,199 @@
+Class JitteS : RT_Rifle
+{
+  Default {
+    Weapon.SelectionOrder 1900;
+    Weapon.AmmoType1 "JITTESAmmoLoaded";
+    Weapon.AmmoType2 "JITTESAmmo";
+    +Weapon.NoAlert;
+    Inventory.Pickupmessage "Picked up a Jitte-S.";
+    AttackSound "weapons/JTSFire";
+    Weapon.SelectionOrder 7000;
+  }
+
+  States
+  {
+    Ready:
+      JTSA A 1 A_WeaponReady(WRF_ALLOWRELOAD);
+      Loop;
+    Deselect:
+      JTSA A 1 A_Lower;
+      Loop;
+    Select:
+      JTSA A 1 A_Raise;
+      Loop;
+    NoAmmo:
+      JTSA A 20 A_PlayWeaponSound("weapons/JTSEmpt");
+      Goto Ready;
+    Fire:
+      JTSA A 0 A_JumpIfNoAmmo("NoAmmo");
+      JTSA A 1 Offset(0, 30);
+      JTSA A 1 {
+        A_FireBullets(2,1.5,1,3,"BulletPuff",FBF_USEAMMO, 8192, "RTWeaponTracer", (invoker.height/2) - 1);
+      }
+      JTSA A 1 Offset(0, 32);
+      JTSA A 1 A_ReFire;
+      Goto Ready;
+    Flash:
+      JTSA A 3 Bright A_Light2;
+      JTSA A 3 Bright A_Light1;
+      JTSA A 0 Bright A_Light0;
+      Goto LightDone;
+    Spawn:
+      JTSA A -1;
+      Stop;
+    Reload:
+      JTSA A 0 A_JumpIfInventory("JITTESAmmoLoaded", 30, 2);
+      JTSA A 0 A_JumpIfInventory("JITTESAmmo", 1, "ReloadWork");
+      JTSA A 1;
+      Goto Ready;
+    ReloadWork:
+      TNT1 A 0 Offset(0,35) A_PlayWeaponSound("weapons/JTSRelo");
+      JTSA A 1;
+      JTSA B 1;
+      JTSA C 1;
+      JTSA D 1;
+      JTSA E 1;
+      JTSA F 1;
+      JTSA G 1;
+      JTSA H 1;
+      JTSA I 1;
+      JTSA J 1;
+      JTSB A 1;
+      JTSB B 1;
+      JTSB C 1;
+      JTSB D 1;
+      JTSB E 1;
+      JTSB F 1;
+      JTSB G 1;
+      JTSB H 1;
+      JTSB I 1;
+      JTSB J 1;
+      JTSC A 1;
+      JTSC B 1;
+      JTSC C 1;
+      JTSC D 1;
+      JTSC E 1;
+      JTSC F 1;
+      JTSC G 1;
+      JTSC H 1;
+      JTSC I 1;
+      JTSC J 1;
+      JTSD A 1;
+      JTSD B 1;
+      JTSD C 1;
+      JTSD D 1;
+      JTSD E 1;
+      JTSD F 1;
+      JTSD G 1;
+      JTSD H 1;
+      JTSD I 1;
+      JTSD J 1;
+      JTSE A 1;
+      JTSE B 1;
+      JTSE C 1;
+      JTSE D 1;
+      JTSE E 1;
+      JTSE F 1;
+      JTSE G 1;
+      JTSE H 1;
+      JTSE I 1;
+      JTSE J 1;
+      JTSF A 1;
+      JTSF B 1;
+      JTSF C 1;
+      JTSF D 1;
+      JTSF E 1;
+      JTSF F 1;
+      JTSF G 1;
+      JTSF H 1;
+      JTSF I 1;
+      JTSF J 1;
+      JTSG A 1;
+      JTSG B 1;
+      JTSG C 1;
+      JTSG D 1;
+      JTSG E 1;
+      JTSG F 1;
+      JTSG G 1;
+      JTSG H 1;
+      JTSG I 1;
+      JTSG J 1;
+      JTSH A 1;
+      JTSH B 1;
+      JTSH C 1;
+      JTSH D 1;
+      JTSH E 1;
+      JTSH F 1;
+      JTSH G 1;
+      JTSH H 1;
+      JTSH I 1;
+      JTSH J 1;
+      JTSI A 1;
+      JTSI B 1;
+      JTSI C 1;
+      JTSI D 1;
+      JTSI E 1;
+      JTSI F 1;
+      JTSI G 1;
+      JTSI H 1;
+      JTSI I 1;
+      JTSI J 1;
+      JTSJ A 1;
+      JTSJ B 1;
+      JTSJ C 1;
+      JTSJ D 1;
+      JTSJ E 1;
+      JTSJ F 1;
+      JTSJ G 1;
+      JTSJ H 1;
+      JTSJ I 1;
+
+      TNT1 A 0 A_GiveInventory("JITTESAmmoLoaded", 30);
+      TNT1 A 0 A_TakeInventory("JITTESAmmo", 1);
+      Goto Ready;
+  }
+}
+
+Class JITTESAmmo : Ammo replaces Clip
+{
+  Default {
+    Inventory.Amount 10;
+    Inventory.MaxAmount 150;
+    Ammo.BackpackAmount 10;
+    Ammo.BackpackMaxAmount 150;
+    Inventory.Icon "CLIPA0";
+    Inventory.PickupMessage "Picked up Jitte-S ammo.";
+  }
+
+  States
+  {
+    Spawn:
+      CLIP A -1;
+      Stop;
+  }
+}
+
+Class JITTESAmmoSmall : JITTESAmmo
+{
+  Default {
+    Inventory.Amount 6;
+    Inventory.PickupMessage "Picked up some Jitte-S ammo.";
+    Inventory.PickupSound "Beretta/Drop";
+    +DROPPED;
+  }
+
+  States
+  {
+    Spawn:
+      9MMP A -1;
+      Stop;
+  }
+}
+
+Class JITTESAmmoLoaded : Ammo
+{
+  Default {
+    Inventory.MaxAmount 30;
+    +Inventory.IGNORESKILL;
+  }
+}
