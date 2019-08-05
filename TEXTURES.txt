@@ -2948,3 +2948,581 @@ Sprite S7SCB0, 640, 360 {
     Patch S7SCB0, 0, 0
 }
 
+
+
+Sprite MPNAA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAA0, 0, 0
+}
+Sprite MPNAB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAB0, 0, 0
+}
+Sprite MPNAC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAC0, 0, 0
+}
+Sprite MPNAD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAD0, 0, 0
+}
+Sprite MPNAE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAE0, 0, 0
+}
+Sprite MPNAF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAF0, 0, 0
+}
+Sprite MPNAG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAG0, 0, 0
+}
+Sprite MPNAH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAH0, 0, 0
+}
+Sprite MPNAI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAI0, 0, 0
+}
+Sprite MPNAJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNAJ0, 0, 0
+}
+Sprite MPNBA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBA0, 0, 0
+}
+Sprite MPNBB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBB0, 0, 0
+}
+Sprite MPNBC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBC0, 0, 0
+}
+Sprite MPNBD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBD0, 0, 0
+}
+Sprite MPNBE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBE0, 0, 0
+}
+Sprite MPNBF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBF0, 0, 0
+}
+Sprite MPNBG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBG0, 0, 0
+}
+Sprite MPNBH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBH0, 0, 0
+}
+Sprite MPNBI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBI0, 0, 0
+}
+Sprite MPNBJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNBJ0, 0, 0
+}
+Sprite MPNCA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCA0, 0, 0
+}
+Sprite MPNCB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCB0, 0, 0
+}
+Sprite MPNCC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCC0, 0, 0
+}
+Sprite MPNCD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCD0, 0, 0
+}
+Sprite MPNCE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCE0, 0, 0
+}
+Sprite MPNCF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCF0, 0, 0
+}
+Sprite MPNCG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCG0, 0, 0
+}
+Sprite MPNCH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCH0, 0, 0
+}
+Sprite MPNCI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCI0, 0, 0
+}
+Sprite MPNCJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNCJ0, 0, 0
+}
+Sprite MPNDA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDA0, 0, 0
+}
+Sprite MPNDB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDB0, 0, 0
+}
+Sprite MPNDC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDC0, 0, 0
+}
+Sprite MPNDD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDD0, 0, 0
+}
+Sprite MPNDE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDE0, 0, 0
+}
+Sprite MPNDF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDF0, 0, 0
+}
+Sprite MPNDG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDG0, 0, 0
+}
+Sprite MPNDH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDH0, 0, 0
+}
+Sprite MPNDI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDI0, 0, 0
+}
+Sprite MPNDJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNDJ0, 0, 0
+}
+Sprite MPNEA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEA0, 0, 0
+}
+Sprite MPNEB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEB0, 0, 0
+}
+Sprite MPNEC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEC0, 0, 0
+}
+Sprite MPNED0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNED0, 0, 0
+}
+Sprite MPNEE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEE0, 0, 0
+}
+Sprite MPNEF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEF0, 0, 0
+}
+Sprite MPNEG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEG0, 0, 0
+}
+Sprite MPNEH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEH0, 0, 0
+}
+Sprite MPNEI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEI0, 0, 0
+}
+Sprite MPNEJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNEJ0, 0, 0
+}
+Sprite MPNFA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFA0, 0, 0
+}
+Sprite MPNFB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFB0, 0, 0
+}
+Sprite MPNFC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFC0, 0, 0
+}
+Sprite MPNFD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFD0, 0, 0
+}
+Sprite MPNFE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFE0, 0, 0
+}
+Sprite MPNFF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFF0, 0, 0
+}
+Sprite MPNFG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFG0, 0, 0
+}
+Sprite MPNFH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFH0, 0, 0
+}
+Sprite MPNFI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFI0, 0, 0
+}
+Sprite MPNFJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNFJ0, 0, 0
+}
+Sprite MPNGA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGA0, 0, 0
+}
+Sprite MPNGB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGB0, 0, 0
+}
+Sprite MPNGC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGC0, 0, 0
+}
+Sprite MPNGD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGD0, 0, 0
+}
+Sprite MPNGE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGE0, 0, 0
+}
+Sprite MPNGF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGF0, 0, 0
+}
+Sprite MPNGG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGG0, 0, 0
+}
+Sprite MPNGH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGH0, 0, 0
+}
+Sprite MPNGI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGI0, 0, 0
+}
+Sprite MPNGJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNGJ0, 0, 0
+}
+Sprite MPNHA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHA0, 0, 0
+}
+Sprite MPNHB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHB0, 0, 0
+}
+Sprite MPNHC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHC0, 0, 0
+}
+Sprite MPNHD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHD0, 0, 0
+}
+Sprite MPNHE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHE0, 0, 0
+}
+Sprite MPNHF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHF0, 0, 0
+}
+Sprite MPNHG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHG0, 0, 0
+}
+Sprite MPNHH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHH0, 0, 0
+}
+Sprite MPNHI0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHI0, 0, 0
+}
+Sprite MPNHJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNHJ0, 0, 0
+}
+Sprite MPNIA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIA0, 0, 0
+}
+Sprite MPNIB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIB0, 0, 0
+}
+Sprite MPNIC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIC0, 0, 0
+}
+Sprite MPNID0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNID0, 0, 0
+}
+Sprite MPNIE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIE0, 0, 0
+}
+Sprite MPNIF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIF0, 0, 0
+}
+Sprite MPNIG0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIG0, 0, 0
+}
+Sprite MPNIH0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIH0, 0, 0
+}
+Sprite MPNII0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNII0, 0, 0
+}
+Sprite MPNIJ0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNIJ0, 0, 0
+}
+Sprite MPNJA0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNJA0, 0, 0
+}
+Sprite MPNJB0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNJB0, 0, 0
+}
+Sprite MPNJC0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNJC0, 0, 0
+}
+Sprite MPNJD0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNJD0, 0, 0
+}
+Sprite MPNJE0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNJE0, 0, 0
+}
+Sprite MPNJF0, 640, 360 {
+    Offset 50, 30
+    XScale 1.5
+    YScale 1.8
+    Patch MPNJF0, 0, 0
+}

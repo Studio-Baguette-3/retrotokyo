@@ -20,3 +20,7 @@ weapons/ThermOff THERMOFF
 weapons/SUP7Fire SUP7F
 weapons/SUP7Empt SUP7E
 weapons/SUP7Insrt SUP7S
+
+weapons/MPNFire MPNF
+weapons/MPNEmpt MPNE
+weapons/MPNRelo MPNR
