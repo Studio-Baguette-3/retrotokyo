@@ -65,7 +65,7 @@ Class SUPA7 : RT_Rifle
       S7FA A -1;
       Stop;
     Reload:
-      S7FA A 0 A_JumpIfInventory("SUPA7AmmoLoaded", 30, 2);
+      S7FA A 0 A_JumpIfInventory("SUPA7AmmoLoaded", 8, 2);
       S7FA A 0 A_JumpIfInventory("SUPA7Ammo", 1, "ReloadStart");
       S7FA A 1;
       Goto Ready;
