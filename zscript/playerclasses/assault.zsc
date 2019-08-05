@@ -1,11 +1,11 @@
 Class Assault : Doomplayer
 {
     Default {
-        Player.startitem "ZR68C";
+        Player.startitem "SUPA7";
+        Player.startitem "SUPA7Ammo", 30;
+        Player.startitem "SUPA7AmmoLoaded", 8;
         Player.startitem "SmokeGrenadeHand";
         Player.startitem "SmokeGrenade", 5;
-        Player.startitem "ZR68CAmmo", 5;
-        Player.startitem "ZR68CAmmoLoaded", 30;
         Player.startitem "RT_Ghost";
         Player.startitem "RT_ThermopticCamo_Assault", 1;
         Player.DisplayName "Assault";

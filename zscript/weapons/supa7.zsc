@@ -1,0 +1,177 @@
+Class SUPA7 : RT_Rifle
+{
+  Default {
+    Weapon.SelectionOrder 1900;
+    Weapon.AmmoType1 "SUPA7AmmoLoaded";
+    Weapon.AmmoType2 "SUPA7Ammo";
+    +Weapon.NoAlert;
+    Inventory.Pickupmessage "Picked up a SUPA-7.";
+    AttackSound "weapons/SUPA7Fire";
+    Weapon.SelectionOrder 6500;
+  }
+
+  States
+  {
+    Ready:
+      S7FA A 1 A_WeaponReady(WRF_ALLOWRELOAD);
+      Loop;
+    Deselect:
+      S7FA A 1 A_Lower;
+      Loop;
+    Select:
+      S7FA A 1 A_Raise;
+      Loop;
+    NoAmmo:
+      S7FA A 20 A_PlayWeaponSound("weapons/SUP7Empt");
+      Goto Ready;
+    Fire:
+      S7FA A 0 A_JumpIfNoAmmo("NoAmmo");
+      S7FA A 1 {
+        A_PlayWeaponSound("weapons/SUP7Fire");
+        A_FireBullets(2,1.5,9,3,"BulletPuff",FBF_USEAMMO, 8192, "RTWeaponTracer", (invoker.height/2) - 1);
+      }
+      S7FA B 1;
+      S7FA C 1;
+      S7FA D 1;
+      S7FA E 1;
+      S7FA F 1;
+      S7FA G 1;
+      S7FA H 1;
+      S7FA I 1;
+      S7FA J 1;
+      S7FB A 1;
+      S7FB B 1;
+      S7FB C 1;
+      S7FB D 1;
+      S7FB E 1;
+      S7FB F 1;
+      S7FB G 1;
+      S7FB H 1;
+      S7FB I 1;
+      S7FB J 1;
+      S7FC A 1;
+      S7FC B 1;
+      S7FC C 1;
+      S7FC D 1;
+      S7FC E 1;
+      S7FC F 1 A_ReFire;
+      Goto Ready;
+    Flash:
+      S7FA A 3 Bright A_Light2;
+      S7FA A 3 Bright A_Light1;
+      S7FA A 0 Bright A_Light0;
+      Goto LightDone;
+    Spawn:
+      S7FA A -1;
+      Stop;
+    Reload:
+      S7FA A 0 A_JumpIfInventory("SUPA7AmmoLoaded", 30, 2);
+      S7FA A 0 A_JumpIfInventory("SUPA7Ammo", 1, "ReloadStart");
+      S7FA A 1;
+      Goto Ready;
+    ReloadStart:
+      // Tilt weapon
+      S7RA A 1;
+      S7RA B 1;
+      S7RA C 1;
+      S7RA D 1;
+      S7RA E 1;
+      S7RA F 1;
+      S7RA G 1;
+      S7RA H 1;
+      S7RA I 1;
+      S7RA J 1;
+      S7RB A 1;
+      Goto ReloadSlug;
+    ReloadSlug:
+      // Insert slug
+      TNT1 A 0 A_PlayWeaponSound("weapons/SUP7Insrt");
+      S7SA A 1;
+      S7SA B 1;
+      S7SA C 1;
+      S7SA D 1;
+      S7SA E 1;
+      S7SA F 1;
+      S7SA G 1;
+      S7SA H 1;
+      S7SA I 1;
+      S7SA J 1;
+      S7SB A 1;
+      S7SB B 1;
+      S7SB C 1;
+      S7SB D 1;
+      S7SB E 1;
+      S7SB F 1;
+      S7SB G 1;
+      S7SB H 1;
+      S7SB I 1;
+      S7SB J 1;
+      S7SC A 1;
+      S7SC B 1;
+      TNT1 A 0 A_GiveInventory("SUPA7AmmoLoaded", 1);
+      TNT1 A 0 A_TakeInventory("SUPA7Ammo", 1);
+      TNT1 A 0 A_JumpIfInventory("SUPA7AmmoLoaded", 0, "ReloadEnd");
+      TNT1 A 0 A_WeaponReady;
+      TNT1 A 0 A_JumpIfInventory("SUPA7Ammo", 1, "ReloadSlug");
+      Goto ReloadEnd;
+    ReloadEnd:
+      // Tilt weapon back
+      S7EA A 1;
+      S7EA B 1;
+      S7EA C 1;
+      S7EA D 1;
+      S7EA E 1;
+      S7EA F 1;
+      S7EA G 1;
+      S7EA H 1;
+      S7EA I 1;
+      S7EA J 1;
+      S7EB A 1;
+      S7EB B 1;
+      Goto Ready;
+  }
+}
+
+Class SUPA7Ammo : Ammo replaces Clip
+{
+  Default {
+    Inventory.Amount 30;
+    Inventory.MaxAmount 30;
+    Ammo.BackpackAmount 30;
+    Ammo.BackpackMaxAmount 30;
+    Inventory.Icon "CLIPA0";
+    Inventory.PickupMessage "Picked up SUPA-7 ammo.";
+  }
+
+  States
+  {
+    Spawn:
+      CLIP A -1;
+      Stop;
+  }
+}
+
+Class SUPA7AmmoSmall : SUPA7Ammo
+{
+  Default {
+    Inventory.Amount 8;
+    Inventory.PickupMessage "Picked up some SUPA-7 ammo.";
+    Inventory.PickupSound "Beretta/Drop";
+    +DROPPED;
+  }
+
+  States
+  {
+    Spawn:
+      9MMP A -1;
+      Stop;
+  }
+}
+
+Class SUPA7AmmoLoaded : Ammo
+{
+  Default {
+    Inventory.MaxAmount 8;
+    +Inventory.IGNORESKILL;
+  }
+}

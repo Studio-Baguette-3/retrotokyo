@@ -16,3 +16,7 @@ weapons/DTPExpl DTPX
 
 weapons/ThermOn THERMON
 weapons/ThermOff THERMOFF
+
+weapons/SUP7Fire SUP7F
+weapons/SUP7Empt SUP7E
+weapons/SUP7Insrt SUP7S
