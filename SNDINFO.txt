@@ -28,3 +28,7 @@ weapons/MPNRelo MPNR
 weapons/JTSFire JTSF
 weapons/JTSEmpt JTSE
 weapons/JTSRelo JTSR
+
+weapons/SRMFire SRMF
+weapons/SRMEmpt SRME
+weapons/SRMRelo SRMR
