@@ -2,7 +2,6 @@ version "3.5"
 
 #include "zscript/lib/mk_matrix.zsc"
 #include "zscript/lib/mk_coordutil.zsc"
-#include "zscript/lib/mk_quaternion.zsc"
 
 #include "zscript/rt_weapon.zsc"
 
